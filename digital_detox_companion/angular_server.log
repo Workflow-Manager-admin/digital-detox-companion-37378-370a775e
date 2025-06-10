@@ -1,0 +1,1711 @@
+
+> angular@0.0.0 start
+> ng serve --host 0.0.0.0  --no-hmr --disable-host-check --port 3000
+
+Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
+❯ Building...
+✔ Building...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  22.59 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 112.88 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [2.217 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.102 seconds]
+
+▲ [WARNING] TS-998113: All imports are unused [plugin angular-compiler]
+
+    src/app/app.component.ts:7:2:
+      7 │   imports: [DetoxDashboardComponent],
+        ╵   ~~~~~~~
+
+
+✘ [ERROR] NG9: Property 'title' does not exist on type 'AppComponent'. [plugin angular-compiler]
+
+    src/app/app.component.html:228:20:
+      228 │       <h1>Hello, {{ title }}</h1>
+          ╵                     ~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'router-outlet' is not a known element:
+1. If 'router-outlet' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'router-outlet' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:336:0:
+      336 │ <router-outlet />
+          ╵ ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:8:15:
+      8 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:21:34:
+      21 │ ...lan-type">{{ planTypes.find(t => t.id === plan.type)?.label }}<...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: No overload matches this call.
+  Overload 1 of 2, '(predicate: (value: PlanType, index: number, obj: PlanType[]) => value is PlanType, thisArg?: any): PlanType | undefined', gave the following error.
+    Argument of type 'undefined' is not assignable to parameter of type '(value: PlanType, index: number, obj: PlanType[]) => value is PlanType'.
+  Overload 2 of 2, '(predicate: (value: PlanType, index: number, obj: PlanType[]) => unknown, thisArg?: any): PlanType | undefined', gave the following error.
+    Argument of type 'undefined' is not assignable to parameter of type '(value: PlanType, index: number, obj: PlanType[]) => unknown'. [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:21:52:
+      21 │ ...-type">{{ planTypes.find(t => t.id === plan.type)?.label }}</span>
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:25:38:
+      25 │             <ng-container [ngSwitch]="plan.type">
+         ╵                                       ~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:26:20:
+      26 │               <span *ngSwitchCase="'daily-limit'">Limit: {{ plan.t...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:26:50:
+      26 │ ...tchCase="'daily-limit'">Limit: {{ plan.targetValue }} / day</span>
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:27:20:
+      27 │ ...         <span *ngSwitchCase="'app-restriction'">Apps: {{ plan....
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:27:54:
+      27 │ ...SwitchCase="'app-restriction'">Apps: {{ plan.targetValue }}</span>
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:28:20:
+      28 │               <span *ngSwitchCase="'offline-day'">Offline: {{ plan...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:28:50:
+      28 │ ...gSwitchCase="'offline-day'">Offline: {{ plan.targetValue }}</span>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:16:
+      31 │           <span>From {{ plan.startDate }}<ng-container *ngIf="plan...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:55:
+      31 │ ...tDate }}<ng-container *ngIf="plan.endDate"> to {{ plan.endDate ...
+         ╵                          ~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:77:
+      31 │ ... *ngIf="plan.endDate"> to {{ plan.endDate }}</ng-container></span>
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:34:51:
+      34 │ ...con-btn accent" (click)="editPlan(plan)" title="Edit"><span cla...
+         ╵                             ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:35:51:
+      35 │ ...-btn accent" (click)="removePlan(plan.id!)" title="Delete"><spa...
+         ╵                          ~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:36:56:
+      36 │ ...tn mini" [class.active]="plan.isActive" (click)="togglePlanActi...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:36:80:
+      36 │ ...n.isActive" (click)="togglePlanActive(plan)" title="Toggle acti...
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:37:52:
+      37 │ ...outlined">{{ plan.isActive ? 'pause_circle' : 'play_circle' }}<...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:42:41:
+      42 │ ...="primary-btn" (click)="adding = !adding">{{ adding ? 'Cancel' ...
+         ╵                            ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:42:59:
+      42 │ ...ing = !adding">{{ adding ? 'Cancel' : 'Add Detox Plan' }}</button>
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:43:10:
+      43 │     <form *ngIf="adding" class="plan-form" (ngSubmit)="addPlan()" ...
+         ╵           ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:43:55:
+      43 │ ...ding" class="plan-form" (ngSubmit)="addPlan()" autocomplete="off">
+         ╵                                        ~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:46:40:
+      46 │ ...type="text" [(ngModel)]="newPlan.title" name="title" maxlength=...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:46:40:
+      46 │ ...type="text" [(ngModel)]="newPlan.title" name="title" maxlength=...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:50:29:
+      50 │         <select [(ngModel)]="newPlan.type" name="type" required>
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:50:29:
+      50 │         <select [(ngModel)]="newPlan.type" name="type" required>
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:18:
+      51 │           <option *ngFor="let t of planTypes" [value]="t.id">{{ t....
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:55:
+      51 │ ... *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+         ╵                                          ~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:61:
+      51 │ ... *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+         ╵                                                ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:54:13:
+      54 │       <label *ngIf="newPlan.type === 'daily-limit'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:56:42:
+      56 │ ..."number" [(ngModel)]="newPlan.targetValue" name="targetValue" m...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:56:42:
+      56 │ ..."number" [(ngModel)]="newPlan.targetValue" name="targetValue" m...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:58:13:
+      58 │       <label *ngIf="newPlan.type === 'app-restriction'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:60:40:
+      60 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:60:40:
+      60 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:62:13:
+      62 │       <label *ngIf="newPlan.type === 'offline-day'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:64:40:
+      64 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:64:40:
+      64 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:68:40:
+      68 │ ...pe="date" [(ngModel)]="newPlan.startDate" name="startDate" requ...
+         ╵                           ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:68:40:
+      68 │ ...pe="date" [(ngModel)]="newPlan.startDate" name="startDate" requ...
+         ╵                           ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:72:40:
+      72 │ ...<input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+         ╵                                    ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:72:40:
+      72 │ ...<input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+         ╵                                    ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.567 seconds]
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:21:34:
+      21 │ ...lan-type">{{ planTypes.find(t => t.id === plan.type)?.label }}<...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: No overload matches this call.
+  Overload 1 of 2, '(predicate: (value: PlanType, index: number, obj: PlanType[]) => value is PlanType, thisArg?: any): PlanType | undefined', gave the following error.
+    Argument of type 'undefined' is not assignable to parameter of type '(value: PlanType, index: number, obj: PlanType[]) => value is PlanType'.
+  Overload 2 of 2, '(predicate: (value: PlanType, index: number, obj: PlanType[]) => unknown, thisArg?: any): PlanType | undefined', gave the following error.
+    Argument of type 'undefined' is not assignable to parameter of type '(value: PlanType, index: number, obj: PlanType[]) => unknown'. [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:21:52:
+      21 │ ...-type">{{ planTypes.find(t => t.id === plan.type)?.label }}</span>
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:25:38:
+      25 │             <ng-container [ngSwitch]="plan.type">
+         ╵                                       ~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:26:20:
+      26 │               <span *ngSwitchCase="'daily-limit'">Limit: {{ plan.t...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:26:50:
+      26 │ ...tchCase="'daily-limit'">Limit: {{ plan.targetValue }} / day</span>
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:27:20:
+      27 │ ...         <span *ngSwitchCase="'app-restriction'">Apps: {{ plan....
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:27:54:
+      27 │ ...SwitchCase="'app-restriction'">Apps: {{ plan.targetValue }}</span>
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:28:20:
+      28 │               <span *ngSwitchCase="'offline-day'">Offline: {{ plan...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:28:50:
+      28 │ ...gSwitchCase="'offline-day'">Offline: {{ plan.targetValue }}</span>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:16:
+      31 │           <span>From {{ plan.startDate }}<ng-container *ngIf="plan...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:55:
+      31 │ ...tDate }}<ng-container *ngIf="plan.endDate"> to {{ plan.endDate ...
+         ╵                          ~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:77:
+      31 │ ... *ngIf="plan.endDate"> to {{ plan.endDate }}</ng-container></span>
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:34:51:
+      34 │ ...con-btn accent" (click)="editPlan(plan)" title="Edit"><span cla...
+         ╵                             ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:35:51:
+      35 │ ...-btn accent" (click)="removePlan(plan.id!)" title="Delete"><spa...
+         ╵                          ~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:36:56:
+      36 │ ...tn mini" [class.active]="plan.isActive" (click)="togglePlanActi...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:36:80:
+      36 │ ...n.isActive" (click)="togglePlanActive(plan)" title="Toggle acti...
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:37:52:
+      37 │ ...outlined">{{ plan.isActive ? 'pause_circle' : 'play_circle' }}<...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:42:41:
+      42 │ ...="primary-btn" (click)="adding = !adding">{{ adding ? 'Cancel' ...
+         ╵                            ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:42:59:
+      42 │ ...ing = !adding">{{ adding ? 'Cancel' : 'Add Detox Plan' }}</button>
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:43:10:
+      43 │     <form *ngIf="adding" class="plan-form" (ngSubmit)="addPlan()" ...
+         ╵           ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:43:55:
+      43 │ ...ding" class="plan-form" (ngSubmit)="addPlan()" autocomplete="off">
+         ╵                                        ~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:46:40:
+      46 │ ...type="text" [(ngModel)]="newPlan.title" name="title" maxlength=...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:46:40:
+      46 │ ...type="text" [(ngModel)]="newPlan.title" name="title" maxlength=...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:50:29:
+      50 │         <select [(ngModel)]="newPlan.type" name="type" required>
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:50:29:
+      50 │         <select [(ngModel)]="newPlan.type" name="type" required>
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:18:
+      51 │           <option *ngFor="let t of planTypes" [value]="t.id">{{ t....
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:55:
+      51 │ ... *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+         ╵                                          ~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:61:
+      51 │ ... *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+         ╵                                                ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:54:13:
+      54 │       <label *ngIf="newPlan.type === 'daily-limit'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:56:42:
+      56 │ ..."number" [(ngModel)]="newPlan.targetValue" name="targetValue" m...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:56:42:
+      56 │ ..."number" [(ngModel)]="newPlan.targetValue" name="targetValue" m...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:58:13:
+      58 │       <label *ngIf="newPlan.type === 'app-restriction'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:60:40:
+      60 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:60:40:
+      60 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:62:13:
+      62 │       <label *ngIf="newPlan.type === 'offline-day'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:64:40:
+      64 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:64:40:
+      64 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:68:40:
+      68 │ ...pe="date" [(ngModel)]="newPlan.startDate" name="startDate" requ...
+         ╵                           ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:68:40:
+      68 │ ...pe="date" [(ngModel)]="newPlan.startDate" name="startDate" requ...
+         ╵                           ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:72:40:
+      72 │ ...<input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+         ╵                                    ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:72:40:
+      72 │ ...<input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+         ╵                                    ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.460 seconds]
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:21:34:
+      21 │ ...lan-type">{{ planTypes.find(t => t.id === plan.type)?.label }}<...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG9: No overload matches this call.
+  Overload 1 of 2, '(predicate: (value: PlanType, index: number, obj: PlanType[]) => value is PlanType, thisArg?: any): PlanType | undefined', gave the following error.
+    Argument of type 'undefined' is not assignable to parameter of type '(value: PlanType, index: number, obj: PlanType[]) => value is PlanType'.
+  Overload 2 of 2, '(predicate: (value: PlanType, index: number, obj: PlanType[]) => unknown, thisArg?: any): PlanType | undefined', gave the following error.
+    Argument of type 'undefined' is not assignable to parameter of type '(value: PlanType, index: number, obj: PlanType[]) => unknown'. [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:21:52:
+      21 │ ...-type">{{ planTypes.find(t => t.id === plan.type)?.label }}</span>
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:25:38:
+      25 │             <ng-container [ngSwitch]="plan.type">
+         ╵                                       ~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:26:20:
+      26 │               <span *ngSwitchCase="'daily-limit'">Limit: {{ plan.t...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:26:50:
+      26 │ ...tchCase="'daily-limit'">Limit: {{ plan.targetValue }} / day</span>
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:27:20:
+      27 │ ...         <span *ngSwitchCase="'app-restriction'">Apps: {{ plan....
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:27:54:
+      27 │ ...SwitchCase="'app-restriction'">Apps: {{ plan.targetValue }}</span>
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:28:20:
+      28 │               <span *ngSwitchCase="'offline-day'">Offline: {{ plan...
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:28:50:
+      28 │ ...gSwitchCase="'offline-day'">Offline: {{ plan.targetValue }}</span>
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:16:
+      31 │           <span>From {{ plan.startDate }}<ng-container *ngIf="plan...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:55:
+      31 │ ...tDate }}<ng-container *ngIf="plan.endDate"> to {{ plan.endDate ...
+         ╵                          ~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:31:77:
+      31 │ ... *ngIf="plan.endDate"> to {{ plan.endDate }}</ng-container></span>
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:34:51:
+      34 │ ...con-btn accent" (click)="editPlan(plan)" title="Edit"><span cla...
+         ╵                             ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:35:51:
+      35 │ ...-btn accent" (click)="removePlan(plan.id!)" title="Delete"><spa...
+         ╵                          ~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:36:56:
+      36 │ ...tn mini" [class.active]="plan.isActive" (click)="togglePlanActi...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:36:80:
+      36 │ ...n.isActive" (click)="togglePlanActive(plan)" title="Toggle acti...
+         ╵                         ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:37:52:
+      37 │ ...outlined">{{ plan.isActive ? 'pause_circle' : 'play_circle' }}<...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:42:41:
+      42 │ ...="primary-btn" (click)="adding = !adding">{{ adding ? 'Cancel' ...
+         ╵                            ~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:42:59:
+      42 │ ...ing = !adding">{{ adding ? 'Cancel' : 'Add Detox Plan' }}</button>
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:43:10:
+      43 │     <form *ngIf="adding" class="plan-form" (ngSubmit)="addPlan()" ...
+         ╵           ~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:43:55:
+      43 │ ...ding" class="plan-form" (ngSubmit)="addPlan()" autocomplete="off">
+         ╵                                        ~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:46:40:
+      46 │ ...type="text" [(ngModel)]="newPlan.title" name="title" maxlength=...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:46:40:
+      46 │ ...type="text" [(ngModel)]="newPlan.title" name="title" maxlength=...
+         ╵                             ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:50:29:
+      50 │         <select [(ngModel)]="newPlan.type" name="type" required>
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:50:29:
+      50 │         <select [(ngModel)]="newPlan.type" name="type" required>
+         ╵                              ~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:18:
+      51 │           <option *ngFor="let t of planTypes" [value]="t.id">{{ t....
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:55:
+      51 │ ... *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+         ╵                                          ~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:51:61:
+      51 │ ... *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+         ╵                                                ~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:54:13:
+      54 │       <label *ngIf="newPlan.type === 'daily-limit'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:56:42:
+      56 │ ..."number" [(ngModel)]="newPlan.targetValue" name="targetValue" m...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:56:42:
+      56 │ ..."number" [(ngModel)]="newPlan.targetValue" name="targetValue" m...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:58:13:
+      58 │       <label *ngIf="newPlan.type === 'app-restriction'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:60:40:
+      60 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:60:40:
+      60 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:62:13:
+      62 │       <label *ngIf="newPlan.type === 'offline-day'">
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:64:40:
+      64 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:64:40:
+      64 │ ...e="text" [(ngModel)]="newPlan.targetValue" name="targetValue" r...
+         ╵                          ~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:68:40:
+      68 │ ...pe="date" [(ngModel)]="newPlan.startDate" name="startDate" requ...
+         ╵                           ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:68:40:
+      68 │ ...pe="date" [(ngModel)]="newPlan.startDate" name="startDate" requ...
+         ╵                           ~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:72:40:
+      72 │ ...<input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+         ╵                                    ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG5002: Parser Error: Bindings cannot contain assignments at column 20 in [{{ planTypes.find(t => t.id === plan.type)?.label }}] in /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/detox-dashboard/detox-dashboard.component.html@20:34 [plugin angular-compiler]
+
+    src/app/detox-dashboard/detox-dashboard.component.html:72:40:
+      72 │ ...<input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+         ╵                                    ~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component DetoxDashboardComponent.
+
+    src/app/detox-dashboard/detox-dashboard.component.ts:16:15:
+      16 │   templateUrl: './detox-dashboard.component.html',
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names            |  Raw size
+polyfills.js         | polyfills        |  90.20 kB | 
+main.js              | main             |  28.40 kB | 
+styles.css           | styles           |  95 bytes | 
+
+                     | Initial total    | 118.70 kB
+
+
+Server bundles      
+Initial chunk files  | Names            |  Raw size
+polyfills.server.mjs | polyfills.server | 572.91 kB | 
+chunk-KOSU3DH3.mjs   | -                |  28.84 kB | 
+server.mjs           | server           |   1.39 kB | 
+main.server.mjs      | main.server      | 800 bytes | 
+
+Application bundle generation complete. [0.468 seconds]
+
+1:25:45 PM [vite] (ssr) ✨ new dependencies optimized: @angular/forms
+1:25:45 PM [vite] (ssr) ✨ optimized dependencies changed. reloading
+Page reload sent to client(s).

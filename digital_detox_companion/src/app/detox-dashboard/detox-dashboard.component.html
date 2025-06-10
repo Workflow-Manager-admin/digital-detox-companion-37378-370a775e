@@ -1,0 +1,100 @@
+<div class="dashboard-container">
+  <header>
+    <h2>
+      <span class="title-primary">Digital Detox</span>
+      <span class="title-accent">Companion</span>
+    </h2>
+    <div class="subtle">
+      <span>Your personalized space to reduce digital distractions</span>
+    </div>
+  </header>
+
+  <section class="main-feature plans-section">
+    <h3>My Detox Plans</h3>
+    <div *ngIf="detoxPlans.length === 0" class="hint-text">
+      No digital detox plans yet.  
+    </div>
+    <div class="plan-list" *ngIf="detoxPlans.length">
+      <div *ngFor="let plan of detoxPlans" class="plan-card" [class.inactive]="!plan.isActive">
+        <div class="plan-main">
+          <span class="plan-title">{{ plan.title }}</span>
+          <span class="plan-type">{{ planTypeLabel(plan.type) }}</span>
+        </div>
+        <div class="plan-info">
+          <span>
+            <ng-container [ngSwitch]="plan.type">
+              <span *ngSwitchCase="'daily-limit'">Limit: {{ plan.targetValue }} / day</span>
+              <span *ngSwitchCase="'app-restriction'">Apps: {{ plan.targetValue }}</span>
+              <span *ngSwitchCase="'offline-day'">Offline: {{ plan.targetValue }}</span>
+              <span *ngSwitchDefault>{{ plan.targetValue }}</span>
+            </ng-container>
+          </span>
+          <span>
+            From {{ plan.startDate }}
+            <ng-container *ngIf="plan.endDate"> to {{ plan.endDate }}</ng-container>
+          </span>
+        </div>
+        <div class="plan-actions">
+          <button class="icon-btn accent" (click)="editPlan(plan)" title="Edit"><span class="material-symbols-outlined">edit</span></button>
+          <button class="icon-btn accent" (click)="removePlan(plan.id!)" title="Delete"><span class="material-symbols-outlined">delete</span></button>
+          <button class="icon-btn mini" [class.active]="plan.isActive" (click)="togglePlanActive(plan)" title="Toggle active">
+            <span class="material-symbols-outlined">{{ plan.isActive ? 'pause_circle' : 'play_circle' }}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <button class="primary-btn" (click)="adding = !adding">{{ adding ? 'Cancel' : 'Add Detox Plan' }}</button>
+    <form *ngIf="adding" class="plan-form" (ngSubmit)="addPlan()" autocomplete="off">
+      <label>
+        Title
+        <input type="text" [(ngModel)]="newPlan.title" name="title" maxlength="32" required />
+      </label>
+      <label>
+        Type
+        <select [(ngModel)]="newPlan.type" name="type" required>
+          <option *ngFor="let t of planTypes" [value]="t.id">{{ t.label }}</option>
+        </select>
+      </label>
+      <label *ngIf="newPlan.type === 'daily-limit'">
+        Time Limit (min)
+        <input type="number" [(ngModel)]="newPlan.targetValue" name="targetValue" min="5" max="1440" required />
+      </label>
+      <label *ngIf="newPlan.type === 'app-restriction'">
+        Apps (comma-separated)
+        <input type="text" [(ngModel)]="newPlan.targetValue" name="targetValue" required placeholder="e.g. Instagram, Facebook" />
+      </label>
+      <label *ngIf="newPlan.type === 'offline-day'">
+        Day(s)
+        <input type="text" [(ngModel)]="newPlan.targetValue" name="targetValue" required placeholder="e.g. Sunday, 1st Jan" />
+      </label>
+      <label>
+        Start Date
+        <input type="date" [(ngModel)]="newPlan.startDate" name="startDate" required />
+      </label>
+      <label>
+        End Date
+        <input type="date" [(ngModel)]="newPlan.endDate" name="endDate" />
+      </label>
+      <button class="primary-btn accent" type="submit">Save Plan</button>
+    </form>
+  </section>
+
+  <section class="placeholder-features">
+    <div>
+      <span class="placeholder-title">Accountability Buddy</span>
+      <div class="placeholder-desc">Coming soon...</div>
+    </div>
+    <div>
+      <span class="placeholder-title">Rewards & Milestones</span>
+      <div class="placeholder-desc">Coming soon...</div>
+    </div>
+    <div>
+      <span class="placeholder-title">Check-Ins</span>
+      <div class="placeholder-desc">Coming soon...</div>
+    </div>
+    <div>
+      <span class="placeholder-title">Reflection Journal</span>
+      <div class="placeholder-desc">Coming soon...</div>
+    </div>
+  </section>
+</div>
