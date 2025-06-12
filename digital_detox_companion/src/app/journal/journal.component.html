@@ -1,0 +1,32 @@
+<div class="feature-container">
+  <h2>AI-Powered Reflection & Habit Journal</h2>
+  <div class="journal-block">
+    <form (ngSubmit)="submitReflection()" *ngIf="!submitted">
+      <label for="reflection">
+        <span class="prompt-title">
+          Reflection Prompt:
+        </span>
+        <span class="prompt-text">
+          “What positive changes have you noticed during your detox?”
+        </span>
+      </label>
+      <textarea
+        id="reflection"
+        [(ngModel)]="reflection"
+        name="reflection"
+        placeholder="Briefly reflect here..."
+        class="input"
+        rows="4"
+        maxlength="200"
+      ></textarea>
+      <button type="submit" class="primary" [disabled]="!reflection.trim()">Log Reflection</button>
+    </form>
+    <div class="thanks-block" *ngIf="submitted">
+      <span>✅</span>
+      <p>Logged! Take time for real-world activities now.</p>
+    </div>
+  </div>
+  <p class="hint" style="margin-top:1rem;">
+    The app’s AI keeps journaling light and occasional — for mindful noticing.
+  </p>
+</div>

@@ -1,0 +1,18 @@
+<div class="feature-container">
+  <h2>Personalized Detox Plans</h2>
+  <div class="plan-list">
+    <div *ngFor="let goal of goals" class="plan-item">
+      <input type="checkbox" [checked]="goal.checked" tabindex="-1" disabled>
+      <div class="plan-info">
+        <span class="label">{{goal.label}}</span>
+        <span class="desc">{{goal.desc}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="plan-actions">
+    <button class="primary">Edit Plans</button>
+  </div>
+  <p class="hint">
+    Tailor your goals. For strictness or new rules, revisit here.
+  </p>
+</div>

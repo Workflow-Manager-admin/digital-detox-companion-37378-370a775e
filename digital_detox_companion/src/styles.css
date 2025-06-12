@@ -1,0 +1,31 @@
+:root {
+  --primary: #2E7D32;
+  --secondary: #FFFFFF;
+  --accent: #FFB300;
+}
+
+body {
+  background: #f8faf7;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  color: #222;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: var(--primary, #2E7D32);
+  text-decoration: none;
+  transition: color .15s;
+}
+a:hover,
+a:focus {
+  color: #237025;
+  text-decoration: underline;
+}
+button:focus-visible {
+  outline: 2px solid var(--accent, #FFB300);
+  outline-offset: 2px;
+}
