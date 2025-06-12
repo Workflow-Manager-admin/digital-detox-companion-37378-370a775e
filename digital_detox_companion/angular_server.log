@@ -124,3 +124,19 @@ chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB |
 
 Application bundle generation complete. [1.356 seconds]
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  10.24 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-UO3FHYXZ.mjs  | -           |  10.68 kB | 
+server.mjs          | server      |   1.42 kB | 
+main.server.mjs     | main.server | 831 bytes | 
+
+Application bundle generation complete. [0.279 seconds]
+
+Page reload sent to client(s).
