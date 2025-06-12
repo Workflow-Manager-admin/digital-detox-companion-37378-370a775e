@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
+import { ResultService } from '../result.service';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -17,4 +19,19 @@ export class BuddyComponent {
     "Try an in-person walk today!",
     "Short offline challenge next weekend?"
   ];
+
+  constructor(private router: Router, private resultService: ResultService) {}
+
+  // PUBLIC_INTERFACE
+  sendSupport() {
+    this.resultService.setResult({
+      result: 'Support Sent!',
+      detail: {
+        to: this.buddyName,
+        time: new Date().toLocaleTimeString(),
+        message: 'Sent a positive nudge to your accountability buddy 🌱.'
+      }
+    });
+    this.router.navigate(['/result']);
+  }
 }

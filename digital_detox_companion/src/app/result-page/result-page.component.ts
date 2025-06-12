@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { ResultService, ActionResult } from '../result.service';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -10,12 +11,20 @@ import { RouterModule } from '@angular/router';
   templateUrl: './result-page.component.html',
   styleUrl: './result-page.component.css'
 })
-export class ResultPageComponent {
+export class ResultPageComponent implements OnInit {
   result: string | null = null;
   detail: any = null;
 
-  constructor() {
-    // In a real application, use a service or ActivatedRoute/Router for navigation state.
-    // This placeholder may be replaced with logic using ResultService when integrated by feature components.
+  constructor(private resultService: ResultService) {}
+
+  ngOnInit() {
+    const res: ActionResult | null = this.resultService.getResult();
+    if (res) {
+      this.result = res.result;
+      this.detail = res.detail || null;
+    } else {
+      this.result = 'No action performed yet.';
+      this.detail = null;
+    }
   }
 }

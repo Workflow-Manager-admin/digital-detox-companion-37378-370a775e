@@ -13,7 +13,7 @@
       <li *ngFor="let msg of encouragement">{{msg}}</li>
     </ul>
   </div>
-  <button class="secondary">Send Support</button>
+  <button class="secondary" (click)="sendSupport()">Send Support</button>
   <div class="small-hint">
     Pairing is anonymous for privacy but friendly!
   </div>
