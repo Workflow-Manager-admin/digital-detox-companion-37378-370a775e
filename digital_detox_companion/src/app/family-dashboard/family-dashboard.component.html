@@ -1,0 +1,23 @@
+<div class="feature-container family-mode">
+  <h2>Family/Parent-Teen Dashboard</h2>
+  <div class="shared-modes">
+    <h3>Offline Family Challenges</h3>
+    <ul>
+      <li>Board game night (Sat)</li>
+      <li>No-phones dinner challenge</li>
+      <li>Outdoor walk together</li>
+    </ul>
+    <button class="primary" disabled>Join Challenge</button>
+  </div>
+  <div class="support-messages">
+    <h3>Support Messaging</h3>
+    <div *ngFor="let msg of supportMessages" class="message-block" [ngClass]="msg.sender">
+      {{msg.who}}: "{{msg.text}}"
+    </div>
+    <input type="text" disabled placeholder="Send message...">
+    <button class="secondary" disabled>Send</button>
+  </div>
+  <small>
+    Parent-teen mode is visually distinct and supports shared offline goals.
+  </small>
+</div>

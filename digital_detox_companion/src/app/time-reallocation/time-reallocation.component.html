@@ -1,0 +1,13 @@
+<div class="feature-container">
+  <h2>Time Reallocation Tracker</h2>
+  <div class="summary-box">
+    <p>Time saved from social media in past week: <b>{{format(summary.minutes)}}</b></p>
+    <ul>
+      <li *ngFor="let act of summary.activities">{{act.label}}: {{format(act.min)}}</li>
+    </ul>
+    <p>How will you use your next saved hour?</p>
+    <input type="text" placeholder="E.g. Learn guitar…" disabled>
+    <button class="primary" disabled>Log Intention</button>
+    <small>Weekly summary and planning (data stubbed).</small>
+  </div>
+</div>

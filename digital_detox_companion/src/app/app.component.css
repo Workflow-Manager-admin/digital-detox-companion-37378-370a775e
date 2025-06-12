@@ -1,0 +1,84 @@
+/* Digital Detox Companion main container & sidebar styling */
+:root {
+  --primary: #2E7D32;
+  --secondary: #FFFFFF;
+  --accent: #FFB300;
+  --gray-900: #212121;
+  --gray-400: #C6D2C1;
+  --sidebar-bg: #f8faf7;
+  --sidebar-hover: #e6f1df;
+}
+body {
+  background: #f8faf7;
+}
+.ddc-app-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8faf7;
+}
+.sidebar {
+  min-width: 210px;
+  background: var(--sidebar-bg,#f8faf7);
+  box-shadow: 2px 0 12px -6px #e0eaea;
+  padding: 1.6rem 0.7rem 1rem 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-right: 1.5px solid #e9f6ea;
+}
+.sidebar header {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 1.3rem;
+}
+.logo-icon {
+  font-size: 1.55rem;
+  margin-right: 7px;
+  color: var(--primary);
+}
+.brand-title {
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: var(--primary);
+  font-size: 1.01rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0;
+  margin: 0;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  color: #3b4f37;
+  padding: 10px 11px 10px 11px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  border-radius: 23px;
+  font-size: .98rem;
+  font-weight: 500;
+  transition: background .17s, color .17s;
+}
+nav a.active,
+nav a:focus,
+nav a:hover {
+  background: var(--sidebar-hover, #e6f1df);
+  color: var(--primary, #2E7D32);
+}
+@media (max-width: 800px) {
+  .sidebar { min-width: 155px; }
+  .ddc-app-container { flex-direction: column;}
+}
+.main-content {
+  flex: 1 1 auto;
+  padding: 0;
+  min-width: 0;
+}
+.offscreen {
+  position: absolute;
+  left: -99999px;
+}

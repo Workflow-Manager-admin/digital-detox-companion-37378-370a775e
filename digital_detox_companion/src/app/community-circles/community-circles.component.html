@@ -1,0 +1,24 @@
+<div class="feature-container">
+  <h2>Community Circles</h2>
+  <div class="circles-selector">
+    <label for="circle">Choose a circle topic:</label>
+    <select id="circle" disabled>
+      <option>Nature Lovers</option>
+      <option>Readers</option>
+      <option>Learners</option>
+      <option>Mindful Parents</option>
+    </select>
+    <button class="primary" disabled>Join</button>
+  </div>
+  <div class="circle-feed">
+    <h3>Circle Messages (simulated live):</h3>
+    <div class="circle-msg" *ngFor="let post of posts">
+      <b>&#64;{{post.user}}:</b> "{{post.content}}"
+    </div>
+    <input type="text" disabled placeholder="Share encouragement...">
+    <button class="secondary" disabled>Send</button>
+  </div>
+  <small>
+    Community features are opt-in and encourage real-world connections. No live data; UI is stub.
+  </small>
+</div>

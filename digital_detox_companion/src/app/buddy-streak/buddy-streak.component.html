@@ -1,0 +1,18 @@
+<div class="feature-container">
+  <h2>Buddy Streak System</h2>
+  <div class="streak-banner">
+    <span class="icon">🤝</span>
+    <span class="streak-count">
+      Shared Streak: <b>{{ streak }} day{{ streak !== 1 ? 's' : '' }}</b>
+    </span>
+  </div>
+  <div class="reflection-chat">
+    <p>Reflection Chat (live):</p>
+    <ng-container *ngFor="let entry of chat">
+      <div class="chat-bubble" [ngClass]="entry.sender">{{ entry.text }}</div>
+    </ng-container>
+    <input type="text" placeholder="Type message…" disabled>
+    <button class="secondary" disabled>Send</button>
+  </div>
+  <div class="motivational-boost">Motivational boost: "Offline is the new luxury" 🌲</div>
+</div>

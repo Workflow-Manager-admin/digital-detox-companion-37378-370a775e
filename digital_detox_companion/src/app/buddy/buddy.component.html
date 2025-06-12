@@ -1,0 +1,20 @@
+<div class="feature-container">
+  <h2>Accountability Buddy System</h2>
+  <div class="profile">
+    <span class="avatar">{{buddyName.charAt(0)}}</span>
+    <div>
+      <span class="buddy-name">{{buddyName}}</span>
+      <span class="status">{{status}}</span>
+    </div>
+  </div>
+  <div class="activity">
+    <p>Buddies keep each other motivated with gentle nudges:</p>
+    <ul>
+      <li *ngFor="let msg of encouragement">{{msg}}</li>
+    </ul>
+  </div>
+  <button class="secondary" (click)="sendSupport()">Send Support</button>
+  <div class="small-hint">
+    Pairing is anonymous for privacy but friendly!
+  </div>
+</div>

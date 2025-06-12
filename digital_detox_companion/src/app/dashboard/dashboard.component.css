@@ -1,0 +1,97 @@
+.dashboard-container {
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+  background: var(--secondary,#fff);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px 0 rgba(60,90,100,0.04);
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  color: var(--gray-900, #222);
+  min-height: 440px;
+}
+h2 {
+  font-size: 2rem;
+  color: var(--primary, #2E7D32);
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+.dashboard-grid {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+section {
+  background: #fafcfb;
+  border-radius: 0.75rem;
+  padding: 1rem 1.3rem 1.3rem 1rem;
+  margin-bottom: 0.5rem;
+  min-width: 0;
+  border: 1px solid #f3f3f3;
+}
+h3 {
+  color: var(--primary, #2E7D32);
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+.progress-circle {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle 82px at center, #EDF6F2 80%, transparent 100%);
+  box-shadow: inset 0 1px 4px 0 #b9d1c2;
+  color: var(--primary, #2E7D32);
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+.buddy-status {
+  font-weight: 500;
+  color: #36813a;
+}
+.buddy-status.online::before { content: "● "; color: var(--primary,#2E7D32); }
+.badge {
+  background: var(--accent, #FFB300);
+  color: #fff;
+  padding: 1px 10px 2px 10px;
+  border-radius: 14px;
+  font-size: .89rem;
+  font-weight: 500;
+  margin-left: 0.7em;
+  letter-spacing: .02em;
+}
+.reflection-prompts {
+  color: #b799a3;
+  font-size: .98rem;
+  font-style: italic;
+}
+.pill-accent {
+  display: inline-block;
+  color: #fff;
+  background: var(--primary,#2E7D32);
+  border-radius: 1.2rem;
+  padding: 3px 19px;
+  font-size: .98rem;
+  line-height: 2;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 4px;
+  transition: background .22s;
+}
+.pill-accent:hover, .pill-accent:focus {
+  background: #237025;
+}
+.pill-accent.outline {
+  color: var(--primary,#2E7D32);
+  background: #eef8ee;
+  border: 1.5px solid var(--primary,#2E7D32);
+}
+@media (max-width: 730px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+  }
+}

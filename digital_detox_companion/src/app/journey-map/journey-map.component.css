@@ -1,0 +1,297 @@
+.feature-container {
+  max-width: 510px;
+  margin: 2.2rem auto;
+  background: #fff;
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 14px 0 rgba(60,60,100,0.08);
+  padding: 1.6rem 1.45rem 2.1rem 1.45rem;
+  position: relative;
+}
+
+h2 {
+  color: var(--primary,#2E7D32);
+  font-size: 1.21rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.progress-bar-wrap {
+  margin-bottom: 1.1rem;
+  margin-top: 0.4rem;
+}
+.progress-bar-bg {
+  background: #eef8ee;
+  border-radius: 34px;
+  overflow: hidden;
+  height: 13px;
+  position: relative;
+  box-shadow: 0 1px 4px #d3efde inset;
+}
+.progress-bar-fg {
+  background: linear-gradient(88deg, #87d1a4 0%, var(--primary, #2E7D32) 100%);
+  height: 13px;
+  transition: width 1.2s cubic-bezier(0.43,0.72,0.27,1.13);
+  border-radius: 34px;
+  box-shadow: 0 1.5px 7px #b6ffbb85;
+}
+.progress-bar-label {
+  display: block;
+  margin-top: 2px;
+  font-size: .97rem;
+  color: #246d39;
+  text-align: right;
+}
+
+.timeline-visual-anim {
+  display: flex;
+  gap: 18px;
+  margin: 1.5rem 0 .95rem 0;
+  justify-content: space-between;
+  position: relative;
+}
+.interactive-milestone-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.18s cubic-bezier(.52,0,.58,1.3), box-shadow .20s;
+  z-index: 1;
+}
+.interactive-milestone-stack.expandable:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 9px 16px #e1f7e5ad;
+  background: #f8fcf9;
+}
+.marker-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 41px;
+  max-width: 47px;
+  position: relative;
+}
+.marker-circle-anim {
+  width: 32px;
+  height: 32px;
+  background: var(--primary,#2E7D32);
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 2.5px 8px #dbf6e0, 0 0px 0px #0a0a0a0d;
+  border: 2px solid #e0efe6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.09rem;
+  transition: background .3s, box-shadow .27s;
+  color: #fff;
+}
+.marker-circle-anim.achieved {
+  background: linear-gradient(135deg, #8efaad 34%, #68dda9 75%, #49b47d 100%);
+  border: 2.3px solid #bfebb4;
+}
+.marker-circle-anim.current {
+  background: repeating-linear-gradient(135deg, #fffbe4, #f5eabb 10px, #f6efd0 16px, #c6f4c2 40px);
+  color: #215b34;
+  animation: markerPulse 1.7s infinite alternate;
+}
+@keyframes markerPulse {
+  0% { box-shadow: 0 1px 0 #e9ffe5, 0 0 12px #bfffdc2c; }
+  100%{ box-shadow: 0 2.5px 7px #f4ffd2, 0 0 11px #bfffdc51; }
+}
+.inner-emoji, .mood-emoji {
+  font-size: 1.3em;
+  position: absolute;
+  left: 0; right: 0; margin: auto;
+  top: -6px;
+  text-align: center;
+  z-index: 2;
+  transition: filter .17s;
+}
+.marker-current {
+  font-size: 1.15em;
+  position: absolute; left:0; right:0;
+  margin: auto; top:4px; color:#ffb300;
+}
+.milestone-flag {
+  font-size: 1.2em; position: absolute; left:0; right:0; top:-6px;
+  text-align:center;
+}
+
+.marker-label-anim {
+  font-size: .94rem;
+  color: #215b34;
+  text-align: center;
+  min-width: 44px;
+  margin-top: .21em;
+  letter-spacing: .00em;
+}
+.milestone-date {
+  font-size: .75rem;
+  color: #a5b09c;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+.milestone-notes {
+  font-size: .86rem;
+  color: #678f74;
+  margin-bottom: 3px;
+}
+
+.milestone-expand-pane {
+  background: #fffde7;
+  border-radius: 12px;
+  border: 1px solid #e4f5e8;
+  padding: .58em 9px 0.7em 9px;
+  min-width: 130px;
+  margin-top: 0.28em;
+  box-shadow: 0 1.5px 8px #e1eabf1d;
+  font-size: .97rem;
+  animation: fadeInPanel .33s;
+}
+@keyframes fadeInPanel { from {opacity:.42;transform:scale(.97);} to { opacity:1;transform:scale(1);} }
+.milestone-detail-btn {
+  background: var(--primary,#2E7D32);
+  border-radius: 20px;
+  color: #fff;
+  border: none;
+  padding: 4px 20px;
+  font-size: .95rem;
+  font-weight: 500;
+  box-shadow: 0 2px 9px #ddf9d634;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background 0.19s, color 0.16s;
+  margin-top: 2px;
+}
+.milestone-detail-btn:hover { background: #21582e; color: #fffde7; }
+
+.reflection-list {
+  margin-top: 4px;
+  font-size: .91rem;
+  color: #8d7c3e;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.journey-description {
+  color: #21422e;
+  margin-bottom: 1.06em;
+  font-size: 1.01rem;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.85em;
+}
+
+.mood-checkin-anim {
+  margin: 0.5em 0 1em 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.mood-checkin-anim label {
+  font-size: .99rem;
+  color: #215b34;
+}
+.mood-checkin-anim select {
+  font-size: 1.12em;
+  border-radius: 0.7em;
+  border: 1.5px solid #cbe0c1;
+  background: #eef8ee;
+  padding: .15em .8em .15em .33em;
+  min-width: 2.4em;
+}
+.mood-checkin-anim .mood-now {
+  font-size: 1.27em;
+  position: relative;
+  margin-left: 3px;
+  min-width: 25px;
+}
+.mood-checkin-anim .highlight {
+  filter: brightness(1.15) drop-shadow(0 1px 4px #c4f4e13c);
+}
+.mood-checkin-anim small {
+  font-size: .93em;
+  color: #989c82;
+}
+
+.milestone-modal-overlay {
+  position: fixed;
+  left:0; top:0; right:0; bottom:0;
+  z-index: 9999;
+  background: rgba(28,42,41,0.14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: overlayIn .14s;
+}
+@keyframes overlayIn { from {opacity: 0;} to {opacity: 1;} }
+.milestone-modal {
+  background: #fff;
+  border-radius: 1.1em;
+  box-shadow: 0 4px 40px 0 #165b3518, 0 2px 12px #bee6bc63;
+  padding: 2.2em 1.7em 1.7em 1.7em;
+  min-width: 295px;
+  max-width: 375px;
+  position: relative;
+  animation: modalReveal .25s;
+}
+@keyframes modalReveal { from { opacity:.4;transform:scale(.97);} to {opacity:1;transform:scale(1);} }
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.3em;
+  color: #808b74;
+  position: absolute; right: 10px; top: 8px;
+  cursor: pointer;
+}
+.milestone-modal h3 {
+  color: var(--primary, #2E7D32);
+  margin-top: 0; margin-bottom:.33em;
+  font-weight: 700;font-size:1.13rem;
+}
+.milestone-modal form {
+  margin-bottom: 0.7em;
+}
+.reflect-btn {
+  background: linear-gradient(92deg, #75db90, #39ab59 87%);
+  color: #fff;
+  font-size: .98em;
+  border-radius: 1.3em;
+  border: none;
+  font-weight: 500;
+  padding: 5px 22px;
+  margin: 7px 0 0 0;
+  box-shadow: 0 2px 14px #d5f3d8a0;
+  cursor: pointer;
+  transition: background 0.16s;
+}
+.reflect-btn:hover { background: #277e4f; }
+
+.error {
+  color: #B94D37;
+  font-size: .95em;
+}
+.reflection-history {
+  font-size: .96em;
+  margin-top:6px;
+  color: #607148;
+  border-left: 3px solid #ecf3dd;
+  padding-left: 8px;
+}
+.history-mood {
+  margin-right: 5px;
+  font-size: 1em;
+}
+.history-date {
+  color: #b7b675;
+  font-size: .92em;
+  margin-left: 3px;
+}
+@media (max-width: 650px) {
+  .feature-container { padding: 1rem 3vw; }
+  .milestone-modal { min-width: 76vw; max-width: 97vw;}
+  .timeline-visual-anim { gap: 12px; }
+}

@@ -1,0 +1,18 @@
+<div class="feature-container">
+  <h2>Off-Grid Check-in</h2>
+  <div class="checkin-block">
+    <p>
+      Send a check-in to your buddy.<br>
+      <small>Delivered next time they return online.</small>
+    </p>
+    <button class="primary" (click)="sendCheckin()" [disabled]="delivered">
+      {{delivered ? "Delivered!" : "Send Check-in"}}
+    </button>
+    <div class="checkin-animation" *ngIf="delivered">
+      <span>📶</span>
+    </div>
+  </div>
+  <p class="hint" style="margin-top:1rem;">Check-ins are subtle, never urgent.<br>
+    Supports true off-grid time.
+  </p>
+</div>

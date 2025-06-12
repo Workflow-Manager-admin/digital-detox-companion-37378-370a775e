@@ -1,0 +1,10 @@
+<div class="result-container">
+  <h2>Result</h2>
+  <div *ngIf="result">
+    <div class="result-main">{{ result }}</div>
+    <div *ngIf="detail" class="result-detail">
+      <pre>{{ detail | json }}</pre>
+    </div>
+  </div>
+  <button routerLink="/" class="btn-home">Return Home</button>
+</div>

@@ -1,0 +1,73 @@
+<div class="feature-container">
+  <h2>AI-Powered Reflection & Habit Journal</h2>
+  <div class="journal-block">
+    <!-- Real-time AI chat interface -->
+    <section style="margin-bottom: 2.2em;">
+      <div style="margin-bottom:.45em; font-weight:500; color: var(--primary, #2E7D32);">
+        Chat with your Reflection Companion
+      </div>
+      <div style="
+        background: #fafcfb; border-radius: 14px; border:1.5px solid #e4f6eb;
+        padding:1em 1.1em 0.3em 0.9em; margin-bottom:.85em; max-height:270px; overflow-y:auto; box-shadow:0 1px 6px 0 #e6efe6;">
+        <div *ngFor="let msg of chatMessages; let i = index; trackBy: trackByIdx"
+            style="margin: 0.11em 0;">
+          <div [ngStyle]="{
+              'background': msg.sender === 'user' ? '#fffbe4' : '#eef8ee',
+              'color': msg.sender === 'user' ? '#66521c' : '#295e36',
+              'align-self': msg.sender === 'user' ? 'flex-end' : 'flex-start',
+              'border-radius': msg.sender === 'user' ? '15px 14px 3px 15px' : '14px 15px 15px 3px',
+              'padding': '7px 14px','max-width':'82%','margin':'2px 3px',
+              'font-size': '.97rem',
+              'box-shadow': msg.sender==='ai'?'0 1px 2px #d9edde60':''
+            }">
+            <span *ngIf="msg.sender==='ai'">🧠 </span>{{msg.text}}
+          </div>
+        </div>
+      </div>
+      <form (submit)="sendChatMessage()" style="display:flex; gap:7px;">
+        <input
+          type="text"
+          [(ngModel)]="chatInput"
+          name="chatInput"
+          placeholder="Type a reflection or question…"
+          class="input"
+          [disabled]="chatLoading"
+          autocomplete="off"
+          style="flex: 1 1 auto; font-size:.99rem;"
+          maxlength="220"
+        />
+        <button type="submit" class="primary" [disabled]="!chatInput.trim() || chatLoading">
+          {{ chatLoading ? '...' : 'Send' }}
+        </button>
+      </form>
+    </section>
+    <!-- Classic reflection prompt (for continuity) -->
+    <form (ngSubmit)="submitReflection()" *ngIf="!submitted">
+      <label for="reflection">
+        <span class="prompt-title">
+          Reflection Prompt:
+        </span>
+        <span class="prompt-text">
+          “What positive changes have you noticed during your detox?”
+        </span>
+      </label>
+      <textarea
+        id="reflection"
+        [(ngModel)]="reflection"
+        name="reflection"
+        placeholder="Briefly reflect here..."
+        class="input"
+        rows="4"
+        maxlength="200"
+      ></textarea>
+      <button type="submit" class="primary" [disabled]="!reflection.trim()">Log Reflection</button>
+    </form>
+    <div class="thanks-block" *ngIf="submitted">
+      <span>✅</span>
+      <p>Logged! Take time for real-world activities now.</p>
+    </div>
+  </div>
+  <p class="hint" style="margin-top:1rem;">
+    The app’s AI keeps journaling light and occasional — for mindful noticing.
+  </p>
+</div>

@@ -1,0 +1,29 @@
+.feature-container {
+  max-width: 410px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(60,60,100,0.07);
+  padding: 1.3rem 1.1rem 1.9rem 1.1rem;
+}
+h2 { color: var(--primary,#2E7D32); font-size: 1.14rem;}
+.mode-list label {
+  display: block;
+  margin-top: .6em;
+  font-size: 1.01rem;
+  color: #1c3c2d;
+  cursor: not-allowed;
+}
+.mode-list input[type='radio'] {
+  accent-color: var(--accent, #FFB300);
+  margin-right: 7px;
+}
+.mode-ui-stub {
+  background: #f8faf7;
+  border-left: 3px solid #e3efea;
+  border-radius: 14px;
+  font-size: .96rem;
+  padding: .9em 1em;
+  color: #2c4636;
+  margin-top: 1em;
+}

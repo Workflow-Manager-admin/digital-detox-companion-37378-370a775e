@@ -1,0 +1,91 @@
+<div class="feature-container">
+  <h2>Detox Journey Map</h2>
+  <section>
+    <!-- Progress Bar -->
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fg"
+          [@progressBarAnim]
+          [style.width.%]="progressPercent"></div>
+      </div>
+      <span class="progress-bar-label">{{progressPercent}}% complete</span>
+    </div>
+
+    <div class="timeline-visual-anim">
+      <div *ngFor="let milestone of milestones; let idx = index"
+        class="interactive-milestone-stack"
+        [ngClass]="{achieved: milestone.achieved, expandable:true}"
+        (click)="toggleExpand(idx)">
+        <div
+          class="marker-layer"
+          [@milestoneAnim]="achievedAnimState[idx]"
+          [ngClass]="{pulse:lastCompletionIdx===idx}"
+          (dblclick)="openMilestoneModal(idx)">
+          <span
+            class="marker-circle-anim"
+            [ngClass]="{'achieved': milestone.achieved, 'current': isCurrent(idx)}">
+            <span class="inner-emoji"
+              [@moodPulse]="moodPulseState"
+              [@colorWiggle]="{value:moodOverlay,params:{hue:colorWiggleHue}}"
+              *ngIf="milestone.achieved && idx === milestones.length-2 && moodOverlay">
+              {{ moodOverlay }}
+            </span>
+            <span *ngIf="!milestone.achieved && isCurrent(idx) && moodOverlay"
+              class="mood-emoji">{{ moodOverlay }}</span>
+            <span *ngIf="milestone.achieved" class="milestone-flag">🏁</span>
+            <span *ngIf="!milestone.achieved && isCurrent(idx)" class="marker-current">★</span>
+          </span>
+        </div>
+        <span class="marker-label-anim">{{ milestone.label }}</span>
+        <span class="milestone-date" *ngIf="milestone.achieved && milestone.date">{{ milestone.date | date:'MMM d' }}</span>
+        <span class="milestone-notes" *ngIf="expandState[idx] && milestone.notes">{{milestone.notes}}</span>
+        <div class="milestone-expand-pane"
+          *ngIf="expandState[idx] && expandAllowed(idx)"
+          [@milestoneExpand]="expandState[idx] ? 'expanded' : 'collapsed'">
+          <button class="milestone-detail-btn" (click)="openMilestoneModal(idx); $event.stopPropagation();">Details / Reflect</button>
+          <div *ngIf="milestone.reflections && milestone.reflections.length > 0" class="reflection-list">
+            <span *ngFor="let r of milestone.reflections"><b>{{r.mood}}</b> "{{r.text}}"</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="journey-description">Your detox story: celebrate progress, reflect at milestones, and notice mood patterns.<br>Click milestones to expand, double-click to reflect.</p>
+    <!-- Mood/journal -->
+    <div class="mood-checkin-anim">
+      <label for="mood">Today's Mood:</label>
+      <select id="mood" [(ngModel)]="mood" (change)="setMood(mood)">
+        <option>😊</option>
+        <option>🙂</option>
+        <option>😐</option>
+        <option>😞</option>
+        <option>🥳</option>
+        <option>😃</option>
+        <option>🤔</option>
+        <option>😴</option>
+      </select>
+      <span class="mood-now highlight" [@moodPulse]="moodPulseState">{{ mood }}</span>
+      <small>Moods are private. Track for self-awareness.</small>
+    </div>
+
+    <!-- Modal -->
+    <div class="milestone-modal-overlay" *ngIf="showModal.show" [@milestoneModalOverlay]>
+      <div class="milestone-modal" [@modalFade]>
+        <button class="close-btn" (click)="closeMilestoneModal()">×</button>
+        <h3>Milestone: {{milestones[showModal.stepIndex].label}}</h3>
+        <p *ngIf="milestones[showModal.stepIndex].achieved">Completed: <b>{{ milestones[showModal.stepIndex].date | date:'MMM d, yyyy' }}</b></p>
+        <p *ngIf="milestones[showModal.stepIndex].notes">{{milestones[showModal.stepIndex].notes}}</p>
+        <form (submit)="submitReflection(showModal.stepIndex); $event.preventDefault();">
+          <textarea [(ngModel)]="reflectionText" name="milestoneReflectBox" rows="3" maxlength="200" placeholder="Your thoughts, feelings, or learning here..." style="width:99%;margin-bottom:8px;" required></textarea>
+          <div *ngIf="reflectionError" class="error">{{reflectionError}}</div>
+          <button type="submit" class="reflect-btn">Add Reflection</button>
+        </form>
+        <div *ngIf="milestones[showModal.stepIndex].reflections?.length" class="reflection-history">
+          <hr>
+          <div *ngFor="let r of milestones[showModal.stepIndex].reflections">
+            <span class="history-mood">{{r.mood}}</span> "{{r.text}}" <span class="history-date">({{r.at | date:'short'}})</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

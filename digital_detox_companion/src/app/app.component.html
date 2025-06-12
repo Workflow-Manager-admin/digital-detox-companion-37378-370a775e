@@ -1,0 +1,42 @@
+<!-- Digital Detox Companion main container and sidebar nav -->
+<div class="ddc-app-container">
+  <aside class="sidebar">
+    <header>
+      <span class="logo-icon">🌿</span>
+      <span class="brand-title">Digital Detox Companion</span>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/plans" routerLinkActive="active"><span>Detox Plans</span></a>
+        </li>
+        <li>
+          <a routerLink="/buddy" routerLinkActive="active"><span>Buddy</span></a>
+        </li>
+        <li>
+          <a routerLink="/rewards" routerLinkActive="active"><span>Milestone Rewards</span></a>
+        </li>
+        <li>
+          <a routerLink="/checkin" routerLinkActive="active"><span>Check-In</span></a>
+        </li>
+        <li>
+          <a routerLink="/journal" routerLinkActive="active"><span>Reflection Journal</span></a>
+        </li>
+        <li style="margin-top: 1.1em; border-top:1px solid #ecf3ec;">
+          <a routerLink="/family-dashboard" routerLinkActive="active"><span>Family/Teen</span></a>
+        </li>
+      </ul>
+    </nav>
+    <footer>
+      <span class="offscreen">Light minimalist theme</span>
+    </footer>
+  </aside>
+  <main class="main-content">
+    <router-outlet />
+  </main>
+</div>
