@@ -17,349 +17,55 @@ styles.css           | styles                      | 610 bytes |
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-BL4GUAYK.js    | dashboard-component         |   7.54 kB | 
-chunk-QJPG52AX.js    | journal-component           |   7.10 kB | 
 chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
 chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
+chunk-45Z3SWH2.js    | journal-component           |   6.48 kB | 
 chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
 chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
-chunk-TCVSJENG.js    | buddy-component             |   5.88 kB | 
 chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
-chunk-6YXKGBDH.js    | plans-component             |   5.35 kB | 
-chunk-G7RMR3PZ.js    | checkin-component           |   4.75 kB | 
+chunk-WIREZWB4.js    | buddy-component             |   5.28 kB | 
+chunk-LJBFBRO2.js    | result-page-component       |   4.81 kB | 
+chunk-2MVKFDA4.js    | plans-component             |   4.77 kB | 
 chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
-chunk-ZVWLBAJN.js    | result-page-component       |   4.10 kB | 
+chunk-BQHSENLT.js    | checkin-component           |   4.17 kB | 
 chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
 chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
 chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
-...and 3 more lazy chunks files. Use "--verbose" to show all the files.
+...and 2 more lazy chunks files. Use "--verbose" to show all the files.
 
 
 Server bundles      
 Initial chunk files  | Names                       |  Raw size
 polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-EF7QVBV4.mjs   | -                           |  12.68 kB | 
+chunk-OGZWGPO2.mjs   | -                           |  12.68 kB | 
 server.mjs           | server                      |   1.42 kB | 
 main.server.mjs      | main.server                 | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-NGN52PNS.mjs   | dashboard-component         |   7.58 kB | 
-chunk-C2ABHG67.mjs   | journal-component           |   7.13 kB | 
 chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
 chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
+chunk-ZIRKIP2W.mjs   | journal-component           |   6.52 kB | 
 chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
 chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
-chunk-2PU375XP.mjs   | buddy-component             |   5.92 kB | 
 chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
-chunk-2APDMRWA.mjs   | plans-component             |   5.38 kB | 
-chunk-JAOLYZWP.mjs   | checkin-component           |   4.79 kB | 
+chunk-WJZ6R4QG.mjs   | buddy-component             |   5.31 kB | 
+chunk-MQO3OFSK.mjs   | result-page-component       |   4.85 kB | 
+chunk-BO5GBEKB.mjs   | plans-component             |   4.80 kB | 
 chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
-chunk-KTP5CZVP.mjs   | result-page-component       |   4.14 kB | 
+chunk-MIB757P6.mjs   | checkin-component           |   4.21 kB | 
 chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
 chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
 chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
-...and 3 more lazy chunks files. Use "--verbose" to show all the files.
+...and 2 more lazy chunks files. Use "--verbose" to show all the files.
 
-Application bundle generation complete. [3.053 seconds]
+Application bundle generation complete. [2.971 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                       |  Raw size
-polyfills.js         | polyfills                   |  90.20 kB | 
-main.js              | main                        |  12.24 kB | 
-chunk-YQOESBWP.js    | -                           | 754 bytes | 
-styles.css           | styles                      | 610 bytes | 
-
-                     | Initial total               | 103.80 kB
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-BL4GUAYK.js    | dashboard-component         |   7.54 kB | 
-chunk-QJPG52AX.js    | journal-component           |   7.10 kB | 
-chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
-chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
-chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
-chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
-chunk-TCVSJENG.js    | buddy-component             |   5.88 kB | 
-chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
-chunk-6YXKGBDH.js    | plans-component             |   5.35 kB | 
-chunk-G7RMR3PZ.js    | checkin-component           |   4.75 kB | 
-chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
-chunk-ZVWLBAJN.js    | result-page-component       |   4.10 kB | 
-chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
-chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
-chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
-...and 3 more lazy chunks files. Use "--verbose" to show all the files.
-
-
-Server bundles      
-Initial chunk files  | Names                       |  Raw size
-polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-EF7QVBV4.mjs   | -                           |  12.68 kB | 
-server.mjs           | server                      |   1.42 kB | 
-main.server.mjs      | main.server                 | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-NGN52PNS.mjs   | dashboard-component         |   7.58 kB | 
-chunk-C2ABHG67.mjs   | journal-component           |   7.13 kB | 
-chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
-chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
-chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
-chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
-chunk-2PU375XP.mjs   | buddy-component             |   5.92 kB | 
-chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
-chunk-2APDMRWA.mjs   | plans-component             |   5.38 kB | 
-chunk-JAOLYZWP.mjs   | checkin-component           |   4.79 kB | 
-chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
-chunk-KTP5CZVP.mjs   | result-page-component       |   4.14 kB | 
-chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
-chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
-chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
-...and 3 more lazy chunks files. Use "--verbose" to show all the files.
-
-Application bundle generation complete. [0.706 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names           |  Raw size
-main.js             | main            |  12.24 kB | 
-
-Lazy chunk files    | Names           |  Raw size
-chunk-Z26K36ZN.js   | buddy-component |   5.28 kB | 
-
-
-Server bundles     
-Initial chunk files | Names           |  Raw size
-chunk-VZTQSY3G.mjs  | -               |  12.68 kB | 
-server.mjs          | server          |   1.42 kB | 
-main.server.mjs     | main.server     | 831 bytes | 
-
-Lazy chunk files    | Names           |  Raw size
-chunk-DLJK6KDZ.mjs  | buddy-component |   5.31 kB | 
-
-Application bundle generation complete. [0.387 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  12.24 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-K6PYW5YJ.js   | checkin-component |   4.17 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-PAO6ZSTN.mjs  | -                 |  12.68 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-ZDCQDYHE.mjs  | checkin-component |   4.21 kB | 
-
-Application bundle generation complete. [0.268 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  12.24 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-TIVDFDTD.js   | journal-component |   6.52 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-T2RF6S2M.mjs  | -                 |  12.68 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-FW3QWUDS.mjs  | journal-component |   6.55 kB | 
-
-Application bundle generation complete. [0.287 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                 |  Raw size
-main.js             | main                  |  12.24 kB | 
-
-Lazy chunk files    | Names                 |  Raw size
-chunk-LJBFBRO2.js   | result-page-component |   4.81 kB | 
-chunk-2MVKFDA4.js   | plans-component       |   4.77 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                 |  Raw size
-chunk-IYSUP7XE.mjs  | -                     |  12.68 kB | 
-server.mjs          | server                |   1.42 kB | 
-main.server.mjs     | main.server           | 831 bytes | 
-
-Lazy chunk files    | Names                 |  Raw size
-chunk-MQO3OFSK.mjs  | result-page-component |   4.85 kB | 
-chunk-BO5GBEKB.mjs  | plans-component       |   4.80 kB | 
-
-Application bundle generation complete. [0.228 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                       |  Raw size
-polyfills.js         | polyfills                   |  90.20 kB | 
-main.js              | main                        |  12.24 kB | 
-chunk-YQOESBWP.js    | -                           | 754 bytes | 
-styles.css           | styles                      | 610 bytes | 
-
-                     | Initial total               | 103.80 kB
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-BL4GUAYK.js    | dashboard-component         |   7.54 kB | 
-chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
-chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
-chunk-TIVDFDTD.js    | journal-component           |   6.52 kB | 
-chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
-chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
-chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
-chunk-Z26K36ZN.js    | buddy-component             |   5.28 kB | 
-chunk-LJBFBRO2.js    | result-page-component       |   4.81 kB | 
-chunk-2MVKFDA4.js    | plans-component             |   4.77 kB | 
-chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
-chunk-K6PYW5YJ.js    | checkin-component           |   4.17 kB | 
-chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
-chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
-chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
-...and 2 more lazy chunks files. Use "--verbose" to show all the files.
-
-
-Server bundles      
-Initial chunk files  | Names                       |  Raw size
-polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-IYSUP7XE.mjs   | -                           |  12.68 kB | 
-server.mjs           | server                      |   1.42 kB | 
-main.server.mjs      | main.server                 | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-NGN52PNS.mjs   | dashboard-component         |   7.58 kB | 
-chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
-chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
-chunk-FW3QWUDS.mjs   | journal-component           |   6.55 kB | 
-chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
-chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
-chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
-chunk-DLJK6KDZ.mjs   | buddy-component             |   5.31 kB | 
-chunk-MQO3OFSK.mjs   | result-page-component       |   4.85 kB | 
-chunk-BO5GBEKB.mjs   | plans-component             |   4.80 kB | 
-chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
-chunk-ZDCQDYHE.mjs   | checkin-component           |   4.21 kB | 
-chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
-chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
-chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
-...and 2 more lazy chunks files. Use "--verbose" to show all the files.
-
-Application bundle generation complete. [0.110 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names           |  Raw size
-main.js             | main            |  12.24 kB | 
-
-Lazy chunk files    | Names           |  Raw size
-chunk-WIREZWB4.js   | buddy-component |   5.28 kB | 
-
-
-Server bundles     
-Initial chunk files | Names           |  Raw size
-chunk-LOS4JGXS.mjs  | -               |  12.68 kB | 
-server.mjs          | server          |   1.42 kB | 
-main.server.mjs     | main.server     | 831 bytes | 
-
-Lazy chunk files    | Names           |  Raw size
-chunk-WJZ6R4QG.mjs  | buddy-component |   5.31 kB | 
-
-Application bundle generation complete. [0.301 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  12.24 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-BQHSENLT.js   | checkin-component |   4.17 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-XFQE6TDV.mjs  | -                 |  12.68 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-MIB757P6.mjs  | checkin-component |   4.21 kB | 
-
-Application bundle generation complete. [0.228 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  12.24 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-XYPRRTSL.js   | journal-component |   6.52 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-VNSCWRNF.mjs  | -                 |  12.68 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-YME3BFHV.mjs  | journal-component |   6.55 kB | 
-
-Application bundle generation complete. [0.247 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  12.24 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-45Z3SWH2.js   | journal-component |   6.48 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-OGZWGPO2.mjs  | -                 |  12.68 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-ZIRKIP2W.mjs  | journal-component |   6.52 kB | 
-
-Application bundle generation complete. [0.169 seconds]
-
-Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles     
@@ -416,5 +122,231 @@ chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB |
 chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
 ...and 2 more lazy chunks files. Use "--verbose" to show all the files.
 
-Application bundle generation complete. [0.111 seconds]
+Application bundle generation complete. [1.291 seconds]
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names               |  Raw size
+main.js             | main                |  12.24 kB | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-7RSIC42L.js   | dashboard-component |  11.37 kB | 
+
+
+Server bundles     
+Initial chunk files | Names               |  Raw size
+chunk-325QEYKY.mjs  | -                   |  12.68 kB | 
+server.mjs          | server              |   1.42 kB | 
+main.server.mjs     | main.server         | 831 bytes | 
+
+Lazy chunk files    | Names               |  Raw size
+chunk-5AVLDT2L.mjs  | dashboard-component |  11.40 kB | 
+
+Application bundle generation complete. [0.253 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names             |  Raw size
+main.js             | main              |  12.24 kB | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-I2YBEAP2.js   | checkin-component |   4.18 kB | 
+
+
+Server bundles     
+Initial chunk files | Names             |  Raw size
+chunk-ULCEFERB.mjs  | -                 |  12.68 kB | 
+server.mjs          | server            |   1.42 kB | 
+main.server.mjs     | main.server       | 831 bytes | 
+
+Lazy chunk files    | Names             |  Raw size
+chunk-PR7KIPUU.mjs  | checkin-component |   4.22 kB | 
+
+Application bundle generation complete. [0.368 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names           |  Raw size
+main.js             | main            |  12.24 kB | 
+
+Lazy chunk files    | Names           |  Raw size
+chunk-XAJ562DW.js   | plans-component |   4.77 kB | 
+
+
+Server bundles     
+Initial chunk files | Names           |  Raw size
+chunk-XFVPOFWC.mjs  | -               |  12.68 kB | 
+server.mjs          | server          |   1.42 kB | 
+main.server.mjs     | main.server     | 831 bytes | 
+
+Lazy chunk files    | Names           |  Raw size
+chunk-M64323Z5.mjs  | plans-component |   4.80 kB | 
+
+Application bundle generation complete. [0.358 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+polyfills.js         | polyfills                   |  90.20 kB | 
+main.js              | main                        |  12.24 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+styles.css           | styles                      | 610 bytes | 
+
+                     | Initial total               | 103.80 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-7RSIC42L.js    | dashboard-component         |  11.37 kB | 
+chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
+chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
+chunk-45Z3SWH2.js    | journal-component           |   6.48 kB | 
+chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
+chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
+chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
+chunk-WIREZWB4.js    | buddy-component             |   5.28 kB | 
+chunk-LJBFBRO2.js    | result-page-component       |   4.81 kB | 
+chunk-XAJ562DW.js    | plans-component             |   4.77 kB | 
+chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
+chunk-I2YBEAP2.js    | checkin-component           |   4.18 kB | 
+chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
+chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
+chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
+...and 2 more lazy chunks files. Use "--verbose" to show all the files.
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+polyfills.server.mjs | polyfills.server            | 572.91 kB | 
+chunk-XFVPOFWC.mjs   | -                           |  12.68 kB | 
+server.mjs           | server                      |   1.42 kB | 
+main.server.mjs      | main.server                 | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-5AVLDT2L.mjs   | dashboard-component         |  11.40 kB | 
+chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
+chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
+chunk-ZIRKIP2W.mjs   | journal-component           |   6.52 kB | 
+chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
+chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
+chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
+chunk-WJZ6R4QG.mjs   | buddy-component             |   5.31 kB | 
+chunk-MQO3OFSK.mjs   | result-page-component       |   4.85 kB | 
+chunk-M64323Z5.mjs   | plans-component             |   4.80 kB | 
+chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
+chunk-PR7KIPUU.mjs   | checkin-component           |   4.22 kB | 
+chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
+chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
+chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
+...and 2 more lazy chunks files. Use "--verbose" to show all the files.
+
+Application bundle generation complete. [0.135 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles     
+Initial chunk files  | Names                       |  Raw size
+polyfills.js         | polyfills                   |  90.20 kB | 
+main.js              | main                        |  12.24 kB | 
+chunk-YQOESBWP.js    | -                           | 754 bytes | 
+styles.css           | styles                      | 610 bytes | 
+
+                     | Initial total               | 103.80 kB
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-7RSIC42L.js    | dashboard-component         |  11.37 kB | 
+chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
+chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
+chunk-45Z3SWH2.js    | journal-component           |   6.48 kB | 
+chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
+chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
+chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
+chunk-WIREZWB4.js    | buddy-component             |   5.28 kB | 
+chunk-LJBFBRO2.js    | result-page-component       |   4.81 kB | 
+chunk-XAJ562DW.js    | plans-component             |   4.77 kB | 
+chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
+chunk-I2YBEAP2.js    | checkin-component           |   4.18 kB | 
+chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
+chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
+chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
+...and 2 more lazy chunks files. Use "--verbose" to show all the files.
+
+
+Server bundles      
+Initial chunk files  | Names                       |  Raw size
+polyfills.server.mjs | polyfills.server            | 572.91 kB | 
+chunk-XFVPOFWC.mjs   | -                           |  12.68 kB | 
+server.mjs           | server                      |   1.42 kB | 
+main.server.mjs      | main.server                 | 831 bytes | 
+chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
+
+Lazy chunk files     | Names                       |  Raw size
+chunk-5AVLDT2L.mjs   | dashboard-component         |  11.40 kB | 
+chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
+chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
+chunk-ZIRKIP2W.mjs   | journal-component           |   6.52 kB | 
+chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
+chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
+chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
+chunk-WJZ6R4QG.mjs   | buddy-component             |   5.31 kB | 
+chunk-MQO3OFSK.mjs   | result-page-component       |   4.85 kB | 
+chunk-M64323Z5.mjs   | plans-component             |   4.80 kB | 
+chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
+chunk-PR7KIPUU.mjs   | checkin-component           |   4.22 kB | 
+chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
+chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
+chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
+...and 2 more lazy chunks files. Use "--verbose" to show all the files.
+
+Application bundle generation complete. [0.124 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                 |  Raw size
+main.js             | main                  |  12.24 kB | 
+
+Lazy chunk files    | Names                 |  Raw size
+chunk-PH77L7ZZ.js   | result-page-component |   3.78 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                 |  Raw size
+chunk-C7QYTTNL.mjs  | -                     |  12.68 kB | 
+server.mjs          | server                |   1.42 kB | 
+main.server.mjs     | main.server           | 831 bytes | 
+
+Lazy chunk files    | Names                 |  Raw size
+chunk-I6UD22AF.mjs  | result-page-component |   3.81 kB | 
+
+Application bundle generation complete. [0.209 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names                 |  Raw size
+main.js             | main                  |  12.24 kB | 
+
+Lazy chunk files    | Names                 |  Raw size
+chunk-FAQMSFYM.js   | result-page-component |   3.78 kB | 
+
+
+Server bundles     
+Initial chunk files | Names                 |  Raw size
+chunk-DMB2LVAA.mjs  | -                     |  12.68 kB | 
+server.mjs          | server                |   1.42 kB | 
+main.server.mjs     | main.server           | 831 bytes | 
+
+Lazy chunk files    | Names                 |  Raw size
+chunk-L366RQYC.mjs  | result-page-component |   3.81 kB | 
+
+Application bundle generation complete. [0.270 seconds]
+
+Page reload sent to client(s).

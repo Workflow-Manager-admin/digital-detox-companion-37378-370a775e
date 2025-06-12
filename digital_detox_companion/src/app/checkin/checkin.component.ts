@@ -17,7 +17,7 @@ export class CheckinComponent {
   // PUBLIC_INTERFACE
   sendCheckin() {
     this.delivered = true;
-    setTimeout(() => {
+    globalThis.setTimeout(() => {
       this.delivered = false;
       // business logic/service call goes here
     }, 1000);

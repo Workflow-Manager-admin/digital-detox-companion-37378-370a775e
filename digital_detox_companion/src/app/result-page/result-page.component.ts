@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { ResultService, ActionResult } from '../result.service';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -15,16 +14,11 @@ export class ResultPageComponent implements OnInit {
   result: string | null = null;
   detail: any = null;
 
-  constructor(private resultService: ResultService) {}
+  constructor() {}
 
   ngOnInit() {
-    const res: ActionResult | null = this.resultService.getResult();
-    if (res) {
-      this.result = res.result;
-      this.detail = res.detail || null;
-    } else {
-      this.result = 'No action performed yet.';
-      this.detail = null;
-    }
+    // Since ResultService is not injected, just display default "No action performed yet."
+    this.result = 'No action performed yet.';
+    this.detail = null;
   }
 }
