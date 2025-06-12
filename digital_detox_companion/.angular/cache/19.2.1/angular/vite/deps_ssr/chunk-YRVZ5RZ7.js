@@ -5,7 +5,7 @@ import {
   EVENT_MANAGER_PLUGINS,
   EventManagerPlugin,
   HTTP_ROOT_INTERCEPTOR_FNS
-} from "./chunk-M2QDVYW3.js";
+} from "./chunk-ZD2OPT37.js";
 import {
   DOCUMENT,
   NullViewportScroller,
@@ -15,7 +15,7 @@ import {
   XhrFactory,
   getDOM,
   setRootDomAdapter
-} from "./chunk-LCBAU2VD.js";
+} from "./chunk-AUKUZSS5.js";
 import {
   ALLOW_MULTIPLE_PLATFORMS,
   APP_ID,
@@ -41,7 +41,6 @@ import {
   inject,
   makeEnvironmentProviders,
   platformCore,
-  require_cjs,
   setClassMetadata,
   setDocument,
   startMeasuring,
@@ -50,7 +49,10 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-62672OIL.js";
+} from "./chunk-UJWP7ZUT.js";
+import {
+  require_cjs
+} from "./chunk-ZUJ64LXG.js";
 import {
   __async,
   __toESM
@@ -16976,4 +16978,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-YHAIOAEH.js.map
+//# sourceMappingURL=chunk-YRVZ5RZ7.js.map

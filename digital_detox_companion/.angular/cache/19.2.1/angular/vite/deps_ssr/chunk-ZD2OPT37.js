@@ -9,7 +9,7 @@ import {
   isPlatformServer,
   parseCookieValue,
   setRootDomAdapter
-} from "./chunk-LCBAU2VD.js";
+} from "./chunk-AUKUZSS5.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   APP_ID,
@@ -68,8 +68,6 @@ import {
   makeStateKey,
   performanceMarkFeature,
   platformCore,
-  require_cjs,
-  require_operators,
   runInInjectionContext,
   setClassMetadata,
   setDocument,
@@ -84,7 +82,13 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵinject
-} from "./chunk-62672OIL.js";
+} from "./chunk-UJWP7ZUT.js";
+import {
+  require_cjs
+} from "./chunk-ZUJ64LXG.js";
+import {
+  require_operators
+} from "./chunk-XCIYP5SE.js";
 import {
   __async,
   __objRest,
@@ -4482,4 +4486,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-M2QDVYW3.js.map
+//# sourceMappingURL=chunk-ZD2OPT37.js.map
