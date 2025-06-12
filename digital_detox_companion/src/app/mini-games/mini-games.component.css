@@ -1,0 +1,33 @@
+.feature-container {
+  max-width: 410px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(60,60,100,0.07);
+  padding: 1.3rem 1.1rem 1.8rem 1.1rem;
+}
+h2 { color: var(--primary,#2E7D32); font-size: 1.15rem;}
+.games-list {
+  margin: 1em 0;
+  color: #2d3e34;
+  font-size: .98rem;
+}
+.games-list ul {
+  margin: .7em 0 1em 1.2em;
+}
+.secondary {
+  background: #fff;
+  color: var(--primary,#2E7D32);
+  border-radius: 20px;
+  border: 1.5px solid var(--primary,#2E7D32);
+  font-weight: 600;
+  font-size: .96rem;
+  margin-bottom: 7px;
+  padding: 6px 19px;
+  cursor: not-allowed;
+}
+.note {
+  color: #979d97;
+  font-size: .96rem;
+  margin-top: 1em;
+}

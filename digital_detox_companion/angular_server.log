@@ -7,665 +7,6 @@ The "disableHostCheck" option will not be used because it is not supported by th
 ❯ Building...
 ✔ Building...
 Browser bundles     
-Initial chunk files  | Names            |  Raw size
-polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  22.59 kB | 
-styles.css           | styles           |  95 bytes | 
-
-                     | Initial total    | 112.88 kB
-
-
-Server bundles      
-Initial chunk files  | Names            |  Raw size
-polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-6XEG6CM6.mjs   | -                |  23.02 kB | 
-server.mjs           | server           |   1.39 kB | 
-main.server.mjs      | main.server      | 800 bytes | 
-
-Application bundle generation complete. [2.439 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.370 seconds]
-
-✘ [ERROR] Could not resolve "./dashboard/dashboard.component"
-
-    src/app/app.routes.ts:4:36:
-      4 │ ...t: () => import('./dashboard/dashboard.component').then(m => m.D...
-        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./plans/plans.component"
-
-    src/app/app.routes.ts:9:36:
-      9 │ ...onent: () => import('./plans/plans.component').then(m => m.Plans...
-        ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./buddy/buddy.component"
-
-    src/app/app.routes.ts:13:36:
-      13 │ ...nent: () => import('./buddy/buddy.component').then(m => m.Buddy...
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./rewards/rewards.component"
-
-    src/app/app.routes.ts:17:36:
-      17 │ ...nt: () => import('./rewards/rewards.component').then(m => m.Rew...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./checkin/checkin.component"
-
-    src/app/app.routes.ts:21:36:
-      21 │ ...nt: () => import('./checkin/checkin.component').then(m => m.Che...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./journal/journal.component"
-
-    src/app/app.routes.ts:25:36:
-      25 │ ...nt: () => import('./journal/journal.component').then(m => m.Jou...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./dashboard/dashboard.component"
-
-    src/app/app.routes.ts:4:36:
-      4 │ ...t: () => import('./dashboard/dashboard.component').then(m => m.D...
-        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./plans/plans.component"
-
-    src/app/app.routes.ts:9:36:
-      9 │ ...onent: () => import('./plans/plans.component').then(m => m.Plans...
-        ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./buddy/buddy.component"
-
-    src/app/app.routes.ts:13:36:
-      13 │ ...nent: () => import('./buddy/buddy.component').then(m => m.Buddy...
-         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./rewards/rewards.component"
-
-    src/app/app.routes.ts:17:36:
-      17 │ ...nt: () => import('./rewards/rewards.component').then(m => m.Rew...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./checkin/checkin.component"
-
-    src/app/app.routes.ts:21:36:
-      21 │ ...nt: () => import('./checkin/checkin.component').then(m => m.Che...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] Could not resolve "./journal/journal.component"
-
-    src/app/app.routes.ts:25:36:
-      25 │ ...nt: () => import('./journal/journal.component').then(m => m.Jou...
-         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.236 seconds]
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.005 seconds]
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.141 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.014 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.012 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.013 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.011 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.010 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.015 seconds]
-
-✘ [ERROR] NG8002: Can't bind to 'routerLinkActiveOptions' since it isn't a known property of 'a'. [plugin angular-compiler]
-
-    src/app/app.component.html:11:54:
-      11 │ ...erLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  Error occurs in the template of component AppComponent.
-
-    src/app/app.component.ts:7:15:
-      7 │   templateUrl: './app.component.html',
-        ╵                ~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './dashboard/dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:7:13:
-      7 │       import('./dashboard/dashboard.component').then(m => m.Dashboa...
-        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './plans/plans.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:13:13:
-      13 │       import('./plans/plans.component').then(m => m.PlansComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './buddy/buddy.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:18:13:
-      18 │       import('./buddy/buddy.component').then(m => m.BuddyComponent)
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './rewards/rewards.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:23:13:
-      23 │       import('./rewards/rewards.component').then(m => m.RewardsCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './checkin/checkin.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:28:13:
-      28 │       import('./checkin/checkin.component').then(m => m.CheckinCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2307: Cannot find module './journal/journal.component' or its corresponding type declarations. [plugin angular-compiler]
-
-    src/app/app.routes.ts:33:13:
-      33 │       import('./journal/journal.component').then(m => m.JournalCom...
-         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
 Initial chunk files  | Names               |  Raw size
 polyfills.js         | polyfills           |  90.20 kB | 
 main.js              | main                |   7.40 kB | 
@@ -676,75 +17,463 @@ styles.css           | styles              | 610 bytes |
 
 Lazy chunk files     | Names               |  Raw size
 chunk-BL4GUAYK.js    | dashboard-component |   7.54 kB | 
-chunk-6ZJBKBRJ.js    | journal-component   |   6.41 kB | 
+chunk-XK6D54MC.js    | journal-component   |   6.42 kB | 
 chunk-YERSP74N.js    | buddy-component     |   5.05 kB | 
 chunk-AARAHUQK.js    | plans-component     |   4.55 kB | 
-chunk-DMGBSPKG.js    | checkin-component   |   4.14 kB | 
+chunk-6V42PXJN.js    | checkin-component   |   4.15 kB | 
 chunk-OOTEH5RJ.js    | rewards-component   |   3.29 kB | 
 
 
 Server bundles      
 Initial chunk files  | Names               |  Raw size
 polyfills.server.mjs | polyfills.server    | 572.91 kB | 
-chunk-XSJFW3VG.mjs   | -                   |   7.84 kB | 
+chunk-A63FVQKJ.mjs   | -                   |   7.84 kB | 
 server.mjs           | server              |   1.42 kB | 
 main.server.mjs      | main.server         | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                   | 788 bytes | 
 
 Lazy chunk files     | Names               |  Raw size
 chunk-NGN52PNS.mjs   | dashboard-component |   7.58 kB | 
-chunk-VG2UFR7O.mjs   | journal-component   |   6.45 kB | 
+chunk-YIDH624P.mjs   | journal-component   |   6.45 kB | 
 chunk-D6O7OUM3.mjs   | buddy-component     |   5.09 kB | 
 chunk-XJLUAOUA.mjs   | plans-component     |   4.59 kB | 
-chunk-M5F2RBF5.mjs   | checkin-component   |   4.18 kB | 
+chunk-X6YRHTCE.mjs   | checkin-component   |   4.18 kB | 
 chunk-KOX2ZHOE.mjs   | rewards-component   |   3.32 kB | 
 
-Application bundle generation complete. [0.818 seconds]
+Application bundle generation complete. [2.875 seconds]
 
-Page reload sent to client(s).
-1:17:27 PM [vite] (client) ✨ new dependencies optimized: @angular/common
-1:17:27 PM [vite] (client) ✨ optimized dependencies changed. reloading
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+1:18:02 PM [vite] (ssr) Re-optimizing dependencies because vite config has changed
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+1:18:54 PM [vite] (client) ✨ new dependencies optimized: @angular/forms
+1:18:54 PM [vite] (client) ✨ optimized dependencies changed. reloading
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   7.40 kB | 
+Application bundle generation failed. [0.470 seconds]
 
-Lazy chunk files    | Names             |  Raw size
-chunk-6V42PXJN.js   | checkin-component |   4.15 kB | 
+✘ [ERROR] Could not resolve "./journey-map/journey-map.component"
+
+    src/app/app.routes.ts:10:36:
+      10 │ ...() => import('./journey-map/journey-map.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-CTPAPTAR.mjs  | -                 |   7.84 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
+✘ [ERROR] TS2307: Cannot find module './journey-map/journey-map.component' or its corresponding type declarations. [plugin angular-compiler]
 
-Lazy chunk files    | Names             |  Raw size
-chunk-X6YRHTCE.mjs  | checkin-component |   4.18 kB | 
+    src/app/app.routes.ts:13:13:
+      13 │       import('./journey-map/journey-map.component').then(m => m.Jo...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Application bundle generation complete. [0.470 seconds]
 
-Page reload sent to client(s).
+✘ [ERROR] Could not resolve "./buddy-streak/buddy-streak.component"
+
+    src/app/app.routes.ts:14:36:
+      14 │ ...) => import('./buddy-streak/buddy-streak.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './buddy-streak/buddy-streak.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:18:13:
+      18 │       import('./buddy-streak/buddy-streak.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./time-reallocation/time-reallocation.component"
+
+    src/app/app.routes.ts:18:36:
+      18 │ ...=> import('./time-reallocation/time-reallocation.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./detox-modes/detox-modes.component"
+
+    src/app/app.routes.ts:22:36:
+      22 │ ...() => import('./detox-modes/detox-modes.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './time-reallocation/time-reallocation.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:23:13:
+      23 │       import('./time-reallocation/time-reallocation.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./emergency-bypass/emergency-bypass.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...=> import('./emergency-bypass/emergency-bypass.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './detox-modes/detox-modes.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:28:13:
+      28 │       import('./detox-modes/detox-modes.component').then(m => m.De...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./offline-events/offline-events.component"
+
+    src/app/app.routes.ts:30:36:
+      30 │ ...=> import('./offline-events/offline-events.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './emergency-bypass/emergency-bypass.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:33:13:
+      33 │       import('./emergency-bypass/emergency-bypass.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./mini-games/mini-games.component"
+
+    src/app/app.routes.ts:34:36:
+      34 │ ... () => import('./mini-games/mini-games.component').then(m => m....
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './offline-events/offline-events.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:38:13:
+      38 │       import('./offline-events/offline-events.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./family-dashboard/family-dashboard.component"
+
+    src/app/app.routes.ts:38:36:
+      38 │ ...=> import('./family-dashboard/family-dashboard.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./digital-budget/digital-budget.component"
+
+    src/app/app.routes.ts:42:36:
+      42 │ ...=> import('./digital-budget/digital-budget.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './mini-games/mini-games.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:43:13:
+      43 │       import('./mini-games/mini-games.component').then(m => m.Mini...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./community-circles/community-circles.component"
+
+    src/app/app.routes.ts:46:36:
+      46 │ ...=> import('./community-circles/community-circles.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './family-dashboard/family-dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:48:13:
+      48 │       import('./family-dashboard/family-dashboard.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './digital-budget/digital-budget.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:53:13:
+      53 │       import('./digital-budget/digital-budget.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './community-circles/community-circles.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:58:13:
+      58 │       import('./community-circles/community-circles.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./journey-map/journey-map.component"
+
+    src/app/app.routes.ts:10:36:
+      10 │ ...() => import('./journey-map/journey-map.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./buddy-streak/buddy-streak.component"
+
+    src/app/app.routes.ts:14:36:
+      14 │ ...) => import('./buddy-streak/buddy-streak.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./time-reallocation/time-reallocation.component"
+
+    src/app/app.routes.ts:18:36:
+      18 │ ...=> import('./time-reallocation/time-reallocation.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./detox-modes/detox-modes.component"
+
+    src/app/app.routes.ts:22:36:
+      22 │ ...() => import('./detox-modes/detox-modes.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./emergency-bypass/emergency-bypass.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...=> import('./emergency-bypass/emergency-bypass.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./offline-events/offline-events.component"
+
+    src/app/app.routes.ts:30:36:
+      30 │ ...=> import('./offline-events/offline-events.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./mini-games/mini-games.component"
+
+    src/app/app.routes.ts:34:36:
+      34 │ ... () => import('./mini-games/mini-games.component').then(m => m....
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./family-dashboard/family-dashboard.component"
+
+    src/app/app.routes.ts:38:36:
+      38 │ ...=> import('./family-dashboard/family-dashboard.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./digital-budget/digital-budget.component"
+
+    src/app/app.routes.ts:42:36:
+      42 │ ...=> import('./digital-budget/digital-budget.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./community-circles/community-circles.component"
+
+    src/app/app.routes.ts:46:36:
+      46 │ ...=> import('./community-circles/community-circles.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |   7.40 kB | 
+Application bundle generation failed. [0.219 seconds]
 
-Lazy chunk files    | Names             |  Raw size
-chunk-XK6D54MC.js   | journal-component |   6.42 kB | 
+✘ [ERROR] Could not resolve "./journey-map/journey-map.component"
+
+    src/app/app.routes.ts:10:36:
+      10 │ ...() => import('./journey-map/journey-map.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-A63FVQKJ.mjs  | -                 |   7.84 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
+✘ [ERROR] TS2307: Cannot find module './journey-map/journey-map.component' or its corresponding type declarations. [plugin angular-compiler]
 
-Lazy chunk files    | Names             |  Raw size
-chunk-YIDH624P.mjs  | journal-component |   6.45 kB | 
+    src/app/app.routes.ts:13:13:
+      13 │       import('./journey-map/journey-map.component').then(m => m.Jo...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Application bundle generation complete. [0.236 seconds]
 
-Page reload sent to client(s).
+✘ [ERROR] Could not resolve "./buddy-streak/buddy-streak.component"
+
+    src/app/app.routes.ts:14:36:
+      14 │ ...) => import('./buddy-streak/buddy-streak.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './buddy-streak/buddy-streak.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:18:13:
+      18 │       import('./buddy-streak/buddy-streak.component').then(m => m....
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./time-reallocation/time-reallocation.component"
+
+    src/app/app.routes.ts:18:36:
+      18 │ ...=> import('./time-reallocation/time-reallocation.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./detox-modes/detox-modes.component"
+
+    src/app/app.routes.ts:22:36:
+      22 │ ...() => import('./detox-modes/detox-modes.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './time-reallocation/time-reallocation.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:23:13:
+      23 │       import('./time-reallocation/time-reallocation.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./emergency-bypass/emergency-bypass.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...=> import('./emergency-bypass/emergency-bypass.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './detox-modes/detox-modes.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:28:13:
+      28 │       import('./detox-modes/detox-modes.component').then(m => m.De...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./offline-events/offline-events.component"
+
+    src/app/app.routes.ts:30:36:
+      30 │ ...=> import('./offline-events/offline-events.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './emergency-bypass/emergency-bypass.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:33:13:
+      33 │       import('./emergency-bypass/emergency-bypass.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./mini-games/mini-games.component"
+
+    src/app/app.routes.ts:34:36:
+      34 │ ... () => import('./mini-games/mini-games.component').then(m => m....
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './offline-events/offline-events.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:38:13:
+      38 │       import('./offline-events/offline-events.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./family-dashboard/family-dashboard.component"
+
+    src/app/app.routes.ts:38:36:
+      38 │ ...=> import('./family-dashboard/family-dashboard.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./digital-budget/digital-budget.component"
+
+    src/app/app.routes.ts:42:36:
+      42 │ ...=> import('./digital-budget/digital-budget.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './mini-games/mini-games.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:43:13:
+      43 │       import('./mini-games/mini-games.component').then(m => m.Mini...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./community-circles/community-circles.component"
+
+    src/app/app.routes.ts:46:36:
+      46 │ ...=> import('./community-circles/community-circles.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './family-dashboard/family-dashboard.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:48:13:
+      48 │       import('./family-dashboard/family-dashboard.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './digital-budget/digital-budget.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:53:13:
+      53 │       import('./digital-budget/digital-budget.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './community-circles/community-circles.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:58:13:
+      58 │       import('./community-circles/community-circles.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./journey-map/journey-map.component"
+
+    src/app/app.routes.ts:10:36:
+      10 │ ...() => import('./journey-map/journey-map.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./buddy-streak/buddy-streak.component"
+
+    src/app/app.routes.ts:14:36:
+      14 │ ...) => import('./buddy-streak/buddy-streak.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./time-reallocation/time-reallocation.component"
+
+    src/app/app.routes.ts:18:36:
+      18 │ ...=> import('./time-reallocation/time-reallocation.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./detox-modes/detox-modes.component"
+
+    src/app/app.routes.ts:22:36:
+      22 │ ...() => import('./detox-modes/detox-modes.component').then(m => m...
+         ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./emergency-bypass/emergency-bypass.component"
+
+    src/app/app.routes.ts:26:36:
+      26 │ ...=> import('./emergency-bypass/emergency-bypass.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./offline-events/offline-events.component"
+
+    src/app/app.routes.ts:30:36:
+      30 │ ...=> import('./offline-events/offline-events.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./mini-games/mini-games.component"
+
+    src/app/app.routes.ts:34:36:
+      34 │ ... () => import('./mini-games/mini-games.component').then(m => m....
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./family-dashboard/family-dashboard.component"
+
+    src/app/app.routes.ts:38:36:
+      38 │ ...=> import('./family-dashboard/family-dashboard.component').then...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./digital-budget/digital-budget.component"
+
+    src/app/app.routes.ts:42:36:
+      42 │ ...=> import('./digital-budget/digital-budget.component').then(m =...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./community-circles/community-circles.component"
+
+    src/app/app.routes.ts:46:36:
+      46 │ ...=> import('./community-circles/community-circles.component').th...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
