@@ -8,6 +8,11 @@ export const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'result',
+    loadComponent: () =>
+      import('./result-page/result-page.component').then(m => m.ResultPageComponent)
+  },
+  {
     path: 'journey-map',
     loadComponent: () =>
       import('./journey-map/journey-map.component').then(m => m.JourneyMapComponent)

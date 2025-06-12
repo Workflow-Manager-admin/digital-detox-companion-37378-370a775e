@@ -17,50 +17,50 @@ styles.css           | styles                      | 610 bytes |
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-BL4GUAYK.js    | dashboard-component         |   7.54 kB | 
+chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
+chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
+chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
 chunk-XK6D54MC.js    | journal-component           |   6.42 kB | 
-chunk-ZCDRAPJH.js    | community-circles-component |   5.59 kB | 
+chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
+chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
 chunk-YERSP74N.js    | buddy-component             |   5.05 kB | 
-chunk-FKMDOC7B.js    | journey-map-component       |   5.00 kB | 
-chunk-X3FYXBZJ.js    | family-dashboard-component  |   4.76 kB | 
 chunk-AARAHUQK.js    | plans-component             |   4.55 kB | 
-chunk-XNXCEIO2.js    | buddy-streak-component      |   4.33 kB | 
+chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
 chunk-6V42PXJN.js    | checkin-component           |   4.15 kB | 
-chunk-7RC3P5FV.js    | time-reallocation-component |   3.95 kB | 
 chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
 chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
 chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
 chunk-OOTEH5RJ.js    | rewards-component           |   3.29 kB | 
-chunk-CK2BZ5NX.js    | detox-modes-component       |   3.27 kB | 
 ...and 1 more lazy chunks files. Use "--verbose" to show all the files.
 
 
 Server bundles      
 Initial chunk files  | Names                       |  Raw size
 polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-SG3KJRSW.mjs   | -                           |  12.46 kB | 
+chunk-7XVGL6ZH.mjs   | -                           |  12.46 kB | 
 server.mjs           | server                      |   1.42 kB | 
 main.server.mjs      | main.server                 | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-NGN52PNS.mjs   | dashboard-component         |   7.58 kB | 
+chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
+chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
+chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
 chunk-YIDH624P.mjs   | journal-component           |   6.45 kB | 
-chunk-W6MIUFDT.mjs   | community-circles-component |   5.63 kB | 
+chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
+chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
 chunk-D6O7OUM3.mjs   | buddy-component             |   5.09 kB | 
-chunk-3XWZI7F5.mjs   | journey-map-component       |   5.04 kB | 
-chunk-WXCRY4DS.mjs   | family-dashboard-component  |   4.80 kB | 
 chunk-XJLUAOUA.mjs   | plans-component             |   4.59 kB | 
-chunk-UVQVCTW7.mjs   | buddy-streak-component      |   4.36 kB | 
+chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
 chunk-X6YRHTCE.mjs   | checkin-component           |   4.18 kB | 
-chunk-56OTELPK.mjs   | time-reallocation-component |   3.99 kB | 
 chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
 chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
 chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
 chunk-KOX2ZHOE.mjs   | rewards-component           |   3.32 kB | 
-chunk-4F7O6RUA.mjs   | detox-modes-component       |   3.30 kB | 
 ...and 1 more lazy chunks files. Use "--verbose" to show all the files.
 
-Application bundle generation complete. [2.908 seconds]
+Application bundle generation complete. [2.870 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -79,323 +79,16 @@ styles.css           | styles                      | 610 bytes |
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-BL4GUAYK.js    | dashboard-component         |   7.54 kB | 
+chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
+chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
+chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
 chunk-XK6D54MC.js    | journal-component           |   6.42 kB | 
-chunk-ZCDRAPJH.js    | community-circles-component |   5.59 kB | 
-chunk-YERSP74N.js    | buddy-component             |   5.05 kB | 
-chunk-FKMDOC7B.js    | journey-map-component       |   5.00 kB | 
-chunk-X3FYXBZJ.js    | family-dashboard-component  |   4.76 kB | 
-chunk-AARAHUQK.js    | plans-component             |   4.55 kB | 
-chunk-XNXCEIO2.js    | buddy-streak-component      |   4.33 kB | 
-chunk-6V42PXJN.js    | checkin-component           |   4.15 kB | 
-chunk-7RC3P5FV.js    | time-reallocation-component |   3.95 kB | 
-chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
-chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
-chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
-chunk-OOTEH5RJ.js    | rewards-component           |   3.29 kB | 
-chunk-CK2BZ5NX.js    | detox-modes-component       |   3.27 kB | 
-...and 1 more lazy chunks files. Use "--verbose" to show all the files.
-
-
-Server bundles      
-Initial chunk files  | Names                       |  Raw size
-polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-SG3KJRSW.mjs   | -                           |  12.46 kB | 
-server.mjs           | server                      |   1.42 kB | 
-main.server.mjs      | main.server                 | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-NGN52PNS.mjs   | dashboard-component         |   7.58 kB | 
-chunk-YIDH624P.mjs   | journal-component           |   6.45 kB | 
-chunk-W6MIUFDT.mjs   | community-circles-component |   5.63 kB | 
-chunk-D6O7OUM3.mjs   | buddy-component             |   5.09 kB | 
-chunk-3XWZI7F5.mjs   | journey-map-component       |   5.04 kB | 
-chunk-WXCRY4DS.mjs   | family-dashboard-component  |   4.80 kB | 
-chunk-XJLUAOUA.mjs   | plans-component             |   4.59 kB | 
-chunk-UVQVCTW7.mjs   | buddy-streak-component      |   4.36 kB | 
-chunk-X6YRHTCE.mjs   | checkin-component           |   4.18 kB | 
-chunk-56OTELPK.mjs   | time-reallocation-component |   3.99 kB | 
-chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
-chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
-chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
-chunk-KOX2ZHOE.mjs   | rewards-component           |   3.32 kB | 
-chunk-4F7O6RUA.mjs   | detox-modes-component       |   3.30 kB | 
-...and 1 more lazy chunks files. Use "--verbose" to show all the files.
-
-Application bundle generation complete. [0.554 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.389 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.212 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.447 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.205 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.426 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.203 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.340 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.214 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.301 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.200 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.383 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.208 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; text: string; }' is not assignable to parameter of type '{ sender: "buddy" | "self"; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"buddy" | "self"'. [plugin angular-compiler]
-
-    src/app/buddy-streak/buddy-streak.component.ts:42:23:
-      42 │         this.chat.push(this.chatExamples[chatIndex]);
-         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.385 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.233 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.205 seconds]
-
-✘ [ERROR] TS2345: Argument of type '{ sender: string; who: string; text: string; }' is not assignable to parameter of type '{ sender: "parent" | "self"; who: string; text: string; }'.
-  Types of property 'sender' are incompatible.
-    Type 'string' is not assignable to type '"parent" | "self"'. [plugin angular-compiler]
-
-    src/app/family-dashboard/family-dashboard.component.ts:30:34:
-      30 │         this.supportMessages.push(this.moreMsgs[this.msgIndex]);
-         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                       |  Raw size
-polyfills.js         | polyfills                   |  90.20 kB | 
-main.js              | main                        |  12.02 kB | 
-chunk-YQOESBWP.js    | -                           | 754 bytes | 
-styles.css           | styles                      | 610 bytes | 
-
-                     | Initial total               | 103.59 kB
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-BL4GUAYK.js    | dashboard-component         |   7.54 kB | 
-chunk-NN2XWA4P.js    | community-circles-component |   6.53 kB | 
-chunk-J5G4O4ET.js    | journey-map-component       |   6.43 kB | 
-chunk-XK6D54MC.js    | journal-component           |   6.42 kB | 
-chunk-DTAFX64Y.js    | buddy-streak-component      |   6.08 kB | 
-chunk-HZOEHWMM.js    | family-dashboard-component  |   6.01 kB | 
-chunk-HMATUY2A.js    | time-reallocation-component |   5.25 kB | 
+chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
+chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
 chunk-YERSP74N.js    | buddy-component             |   5.05 kB | 
 chunk-AARAHUQK.js    | plans-component             |   4.55 kB | 
+chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
 chunk-6V42PXJN.js    | checkin-component           |   4.15 kB | 
-chunk-JHDKIEGZ.js    | digital-budget-component    |   3.90 kB | 
 chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
 chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
 chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
@@ -406,205 +99,94 @@ chunk-OOTEH5RJ.js    | rewards-component           |   3.29 kB |
 Server bundles      
 Initial chunk files  | Names                       |  Raw size
 polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-H2766VMJ.mjs   | -                           |  12.46 kB | 
+chunk-7XVGL6ZH.mjs   | -                           |  12.46 kB | 
 server.mjs           | server                      |   1.42 kB | 
 main.server.mjs      | main.server                 | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-NGN52PNS.mjs   | dashboard-component         |   7.58 kB | 
-chunk-IIBGGHWM.mjs   | community-circles-component |   6.57 kB | 
-chunk-EH6QLUP3.mjs   | journey-map-component       |   6.47 kB | 
+chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
+chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
+chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
 chunk-YIDH624P.mjs   | journal-component           |   6.45 kB | 
-chunk-5XUN5LC4.mjs   | buddy-streak-component      |   6.12 kB | 
-chunk-23PHZXLI.mjs   | family-dashboard-component  |   6.04 kB | 
-chunk-P6WHIK7C.mjs   | time-reallocation-component |   5.28 kB | 
+chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
+chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
 chunk-D6O7OUM3.mjs   | buddy-component             |   5.09 kB | 
 chunk-XJLUAOUA.mjs   | plans-component             |   4.59 kB | 
+chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
 chunk-X6YRHTCE.mjs   | checkin-component           |   4.18 kB | 
-chunk-2UH4YNHE.mjs   | digital-budget-component    |   3.93 kB | 
 chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
 chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
 chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
 chunk-KOX2ZHOE.mjs   | rewards-component           |   3.32 kB | 
 ...and 1 more lazy chunks files. Use "--verbose" to show all the files.
 
-Application bundle generation complete. [0.277 seconds]
+Application bundle generation complete. [0.629 seconds]
 
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                    |  Raw size
-main.js             | main                     |  12.02 kB | 
-
-Lazy chunk files    | Names                    |  Raw size
-chunk-NBDWHWKZ.js   | digital-budget-component |   3.92 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                    |  Raw size
-chunk-R4XIKYIT.mjs  | -                        |  12.46 kB | 
-server.mjs          | server                   |   1.42 kB | 
-main.server.mjs     | main.server              | 831 bytes | 
-
-Lazy chunk files    | Names                    |  Raw size
-chunk-LIOYBB7O.mjs  | digital-budget-component |   3.96 kB | 
-
-Application bundle generation complete. [0.216 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                       |  Raw size
-main.js             | main                        |  12.02 kB | 
-
-Lazy chunk files    | Names                       |  Raw size
-chunk-WA6WONJR.js   | time-reallocation-component |   5.27 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                       |  Raw size
-chunk-VXOPINBV.mjs  | -                           |  12.46 kB | 
-server.mjs          | server                      |   1.42 kB | 
-main.server.mjs     | main.server                 | 831 bytes | 
-
-Lazy chunk files    | Names                       |  Raw size
-chunk-PBRSOJKX.mjs  | time-reallocation-component |   5.30 kB | 
-
-Application bundle generation complete. [0.233 seconds]
-
-Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
 Initial chunk files | Names                 |  Raw size
-main.js             | main                  |  12.02 kB | 
+main.js             | main                  |  12.24 kB | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-NS4MJOUD.js   | journey-map-component |   6.83 kB | 
+chunk-L5I65XFN.js   | result-page-component |   4.27 kB | 
 
 
 Server bundles     
 Initial chunk files | Names                 |  Raw size
-chunk-325Z5EJ5.mjs  | -                     |  12.46 kB | 
+chunk-XQFXOHUY.mjs  | -                     |  12.68 kB | 
 server.mjs          | server                |   1.42 kB | 
 main.server.mjs     | main.server           | 831 bytes | 
 
 Lazy chunk files    | Names                 |  Raw size
-chunk-TN6AWMWD.mjs  | journey-map-component |   6.86 kB | 
+chunk-CVSUJFRR.mjs  | result-page-component |   4.31 kB | 
 
-Application bundle generation complete. [0.285 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                       |  Raw size
-main.js             | main                        |  12.02 kB | 
-
-Lazy chunk files    | Names                       |  Raw size
-chunk-V3QQEWAF.js   | community-circles-component |   6.86 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                       |  Raw size
-chunk-6BRO6EOH.mjs  | -                           |  12.46 kB | 
-server.mjs          | server                      |   1.42 kB | 
-main.server.mjs     | main.server                 | 831 bytes | 
-
-Lazy chunk files    | Names                       |  Raw size
-chunk-M57XVEQ2.mjs  | community-circles-component |   6.90 kB | 
-
-Application bundle generation complete. [0.306 seconds]
+Application bundle generation complete. [0.494 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names                      |  Raw size
-main.js             | main                       |  12.02 kB | 
+Initial chunk files | Names                 |  Raw size
+main.js             | main                  |  12.24 kB | 
 
-Lazy chunk files    | Names                      |  Raw size
-chunk-MC7DUWVF.js   | family-dashboard-component |   6.34 kB | 
+Lazy chunk files    | Names                 |  Raw size
+chunk-XA6P2HGI.js   | result-page-component |   3.69 kB | 
 
 
 Server bundles     
-Initial chunk files | Names                      |  Raw size
-chunk-HCJAN7Y7.mjs  | -                          |  12.46 kB | 
-server.mjs          | server                     |   1.42 kB | 
-main.server.mjs     | main.server                | 831 bytes | 
+Initial chunk files | Names                 |  Raw size
+chunk-24AUBC7I.mjs  | -                     |  12.68 kB | 
+server.mjs          | server                |   1.42 kB | 
+main.server.mjs     | main.server           | 831 bytes | 
 
-Lazy chunk files    | Names                      |  Raw size
-chunk-S3DTBXHM.mjs  | family-dashboard-component |   6.37 kB | 
+Lazy chunk files    | Names                 |  Raw size
+chunk-TTAKRW3N.mjs  | result-page-component |   3.72 kB | 
 
-Application bundle generation complete. [0.253 seconds]
+Application bundle generation complete. [0.336 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names                    |  Raw size
-main.js             | main                     |  12.02 kB | 
+Initial chunk files | Names                 |  Raw size
+main.js             | main                  |  12.24 kB | 
 
-Lazy chunk files    | Names                    |  Raw size
-chunk-JLWU3AVI.js   | digital-budget-component |   4.25 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                    |  Raw size
-chunk-SRFT2BSO.mjs  | -                        |  12.46 kB | 
-server.mjs          | server                   |   1.42 kB | 
-main.server.mjs     | main.server              | 831 bytes | 
-
-Lazy chunk files    | Names                    |  Raw size
-chunk-OGGGZV6D.mjs  | digital-budget-component |   4.29 kB | 
-
-Application bundle generation complete. [0.242 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                       |  Raw size
-main.js             | main                        |  12.02 kB | 
-
-Lazy chunk files    | Names                       |  Raw size
-chunk-753B5UYO.js   | time-reallocation-component |   5.60 kB | 
+Lazy chunk files    | Names                 |  Raw size
+chunk-E7ITI2T7.js   | result-page-component |   3.69 kB | 
 
 
 Server bundles     
-Initial chunk files | Names                       |  Raw size
-chunk-BE5YC55U.mjs  | -                           |  12.46 kB | 
-server.mjs          | server                      |   1.42 kB | 
-main.server.mjs     | main.server                 | 831 bytes | 
+Initial chunk files | Names                 |  Raw size
+chunk-BOKWHCXS.mjs  | -                     |  12.68 kB | 
+server.mjs          | server                |   1.42 kB | 
+main.server.mjs     | main.server           | 831 bytes | 
 
-Lazy chunk files    | Names                       |  Raw size
-chunk-MCBKPKW6.mjs  | time-reallocation-component |   5.63 kB | 
+Lazy chunk files    | Names                 |  Raw size
+chunk-SRLSR45D.mjs  | result-page-component |   3.72 kB | 
 
-Application bundle generation complete. [0.278 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |  12.02 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-PLZWYDAB.js   | buddy-streak-component |   6.48 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-7XVGL6ZH.mjs  | -                      |  12.46 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-ET33FAYM.mjs  | buddy-streak-component |   6.51 kB | 
-
-Application bundle generation complete. [0.307 seconds]
+Application bundle generation complete. [0.243 seconds]
 
 Page reload sent to client(s).
