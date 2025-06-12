@@ -1,14 +1,13 @@
 <div class="feature-container">
   <h2>Digital Budget</h2>
   <div class="budget-controls">
-    <p>Your weekly screen time budget: <b>6h 00m</b></p>
+    <p>Your weekly screen time budget: <b>{{format(totalBudget)}}</b></p>
     <div class="budget-split">
-      <div><b>Social Media:</b> 2h 10m</div>
-      <div><b>Video:</b> 1h 30m</div>
-      <div><b>Games:</b> 50m</div>
-      <div><b>Other:</b> 1h 30m</div>
+      <div *ngFor="let alloc of allocations">
+        <b>{{alloc.label}}:</b> {{format(alloc.min)}}
+      </div>
     </div>
-    <p>Rollover: <b>+17m</b></p>
+    <p>Rollover: <b>+{{rollover}}m</b></p>
     <button class="primary" disabled>Adjust Budget</button>
     <small>Budget allocation per app (functionality stubbed).</small>
   </div>

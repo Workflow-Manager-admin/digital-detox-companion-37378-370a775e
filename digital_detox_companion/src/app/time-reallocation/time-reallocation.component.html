@@ -1,12 +1,9 @@
 <div class="feature-container">
   <h2>Time Reallocation Tracker</h2>
   <div class="summary-box">
-    <p>Time saved from social media in past week: <b>5h 37m</b></p>
+    <p>Time saved from social media in past week: <b>{{format(summary.minutes)}}</b></p>
     <ul>
-      <li>Walking: 1h</li>
-      <li>Reading: 2h</li>
-      <li>Cooking: 50m</li>
-      <li>Socializing: 2h</li>
+      <li *ngFor="let act of summary.activities">{{act.label}}: {{format(act.min)}}</li>
     </ul>
     <p>How will you use your next saved hour?</p>
     <input type="text" placeholder="E.g. Learn guitar…" disabled>

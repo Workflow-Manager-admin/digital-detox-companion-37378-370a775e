@@ -2,8 +2,12 @@
   <h2>Detox Journey Map</h2>
   <section>
     <div class="timeline-visual">
-      <div class="timeline-marker" *ngFor="let milestone of ['Start', 'Week 1', 'Mid-point', 'Current', 'Goal']">
-        <span class="marker-circle"></span>
+      <div class="timeline-marker" *ngFor="let milestone of timeline; let i = index">
+        <span class="marker-circle" style="position:relative;">
+          <ng-container *ngIf="i === markerIndex">
+            <span style="position:absolute; left:0; right:0; text-align:center; width:100%; top:-2px; font-size:1.4em;">{{ mood }}</span>
+          </ng-container>
+        </span>
         <span class="marker-label">{{ milestone }}</span>
       </div>
     </div>
@@ -11,11 +15,7 @@
     See progress, complete story moments, and mood check-ins along the way.</p>
     <div class="mood-checkin">
       <label for="mood">Today's Mood:</label>
-      <select id="mood">
-        <option>😊</option>
-        <option>😐</option>
-        <option>😞</option>
-      </select>
+      <span><b>{{ mood }}</b></span>
       <button class="secondary" disabled>Log</button>
       <small>Journaling here is private and optional.</small>
     </div>

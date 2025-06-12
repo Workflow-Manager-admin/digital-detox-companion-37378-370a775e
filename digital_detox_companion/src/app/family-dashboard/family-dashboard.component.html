@@ -11,8 +11,9 @@
   </div>
   <div class="support-messages">
     <h3>Support Messaging</h3>
-    <div class="message-block self">Teen: "Can we do a movie night offline?"</div>
-    <div class="message-block parent">Parent: "👏 Proud of your effort!"</div>
+    <div *ngFor="let msg of supportMessages" class="message-block" [ngClass]="msg.sender">
+      {{msg.who}}: "{{msg.text}}"
+    </div>
     <input type="text" disabled placeholder="Send message...">
     <button class="secondary" disabled>Send</button>
   </div>
