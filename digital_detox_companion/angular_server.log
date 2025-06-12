@@ -17,9 +17,9 @@ styles.css           | styles                      | 610 bytes |
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-NJZERHX6.js    | dashboard-component         |  16.36 kB | 
+chunk-B37Q2JIL.js    | journal-component           |  13.19 kB | 
 chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
 chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
-chunk-45Z3SWH2.js    | journal-component           |   6.48 kB | 
 chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
 chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
 chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
@@ -37,16 +37,16 @@ chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB |
 Server bundles      
 Initial chunk files  | Names                       |  Raw size
 polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-4YST5TFP.mjs   | -                           |  10.96 kB | 
+chunk-P7INOKPL.mjs   | -                           |  10.96 kB | 
 server.mjs           | server                      |   1.42 kB | 
 main.server.mjs      | main.server                 | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-DM757WQK.mjs   | dashboard-component         |  16.39 kB | 
+chunk-VE4FOGSR.mjs   | journal-component           |  13.23 kB | 
 chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
 chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
-chunk-ZIRKIP2W.mjs   | journal-component           |   6.52 kB | 
 chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
 chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
 chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
@@ -60,7 +60,7 @@ chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB |
 chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
 ...and 2 more lazy chunks files. Use "--verbose" to show all the files.
 
-Application bundle generation complete. [3.927 seconds]
+Application bundle generation complete. [3.108 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -79,110 +79,7 @@ styles.css           | styles                      | 610 bytes |
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-NJZERHX6.js    | dashboard-component         |  16.36 kB | 
-chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
-chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
-chunk-45Z3SWH2.js    | journal-component           |   6.48 kB | 
-chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
-chunk-MC7DUWVF.js    | family-dashboard-component  |   6.34 kB | 
-chunk-753B5UYO.js    | time-reallocation-component |   5.60 kB | 
-chunk-WIREZWB4.js    | buddy-component             |   5.28 kB | 
-chunk-XAJ562DW.js    | plans-component             |   4.77 kB | 
-chunk-JLWU3AVI.js    | digital-budget-component    |   4.25 kB | 
-chunk-I2YBEAP2.js    | checkin-component           |   4.18 kB | 
-chunk-FAQMSFYM.js    | result-page-component       |   3.78 kB | 
-chunk-EYNLKTHS.js    | emergency-bypass-component  |   3.56 kB | 
-chunk-4YRXO4P3.js    | mini-games-component        |   3.50 kB | 
-chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB | 
-...and 2 more lazy chunks files. Use "--verbose" to show all the files.
-
-
-Server bundles      
-Initial chunk files  | Names                       |  Raw size
-polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-4YST5TFP.mjs   | -                           |  10.96 kB | 
-server.mjs           | server                      |   1.42 kB | 
-main.server.mjs      | main.server                 | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-DM757WQK.mjs   | dashboard-component         |  16.39 kB | 
-chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
-chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
-chunk-ZIRKIP2W.mjs   | journal-component           |   6.52 kB | 
-chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
-chunk-S3DTBXHM.mjs   | family-dashboard-component  |   6.37 kB | 
-chunk-MCBKPKW6.mjs   | time-reallocation-component |   5.63 kB | 
-chunk-WJZ6R4QG.mjs   | buddy-component             |   5.31 kB | 
-chunk-M64323Z5.mjs   | plans-component             |   4.80 kB | 
-chunk-OGGGZV6D.mjs   | digital-budget-component    |   4.29 kB | 
-chunk-PR7KIPUU.mjs   | checkin-component           |   4.22 kB | 
-chunk-L366RQYC.mjs   | result-page-component       |   3.81 kB | 
-chunk-CGNPX6YH.mjs   | emergency-bypass-component  |   3.60 kB | 
-chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB | 
-chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
-...and 2 more lazy chunks files. Use "--verbose" to show all the files.
-
-Application bundle generation complete. [1.984 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.524 seconds]
-
-✘ [ERROR] TS2322: Type 'Observable<{ sender: string; text: string; } | { sender: string; text: string; }>' is not assignable to type 'Observable<{ sender: "user" | "ai"; text: string; }>'.
-  Type '{ sender: string; text: string; } | { sender: string; text: string; }' is not assignable to type '{ sender: "user" | "ai"; text: string; }'.
-    Type '{ sender: string; text: string; }' is not assignable to type '{ sender: "user" | "ai"; text: string; }'.
-      Types of property 'sender' are incompatible.
-        Type 'string' is not assignable to type '"user" | "ai"'. [plugin angular-compiler]
-
-    src/app/journal/ai-chat.service.ts:28:4:
-      28 │     return of(
-         ╵     ~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.354 seconds]
-
-✘ [ERROR] TS2322: Type 'Observable<{ sender: string; text: string; } | { sender: string; text: string; }>' is not assignable to type 'Observable<{ sender: "user" | "ai"; text: string; }>'.
-  Type '{ sender: string; text: string; } | { sender: string; text: string; }' is not assignable to type '{ sender: "user" | "ai"; text: string; }'.
-    Type '{ sender: string; text: string; }' is not assignable to type '{ sender: "user" | "ai"; text: string; }'.
-      Types of property 'sender' are incompatible.
-        Type 'string' is not assignable to type '"user" | "ai"'. [plugin angular-compiler]
-
-    src/app/journal/ai-chat.service.ts:28:4:
-      28 │     return of(
-         ╵     ~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.466 seconds]
-
-✘ [ERROR] TS2322: Type 'Observable<{ sender: string; text: string; } | { sender: string; text: string; }>' is not assignable to type 'Observable<{ sender: "user" | "ai"; text: string; }>'.
-  Type '{ sender: string; text: string; } | { sender: string; text: string; }' is not assignable to type '{ sender: "user" | "ai"; text: string; }'.
-    Type '{ sender: string; text: string; }' is not assignable to type '{ sender: "user" | "ai"; text: string; }'.
-      Types of property 'sender' are incompatible.
-        Type 'string' is not assignable to type '"user" | "ai"'. [plugin angular-compiler]
-
-    src/app/journal/ai-chat.service.ts:28:4:
-      28 │     return of(
-         ╵     ~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                       |  Raw size
-polyfills.js         | polyfills                   |  90.20 kB | 
-main.js              | main                        |  10.52 kB | 
-chunk-YQOESBWP.js    | -                           | 754 bytes | 
-styles.css           | styles                      | 610 bytes | 
-
-                     | Initial total               | 102.08 kB
-
-Lazy chunk files     | Names                       |  Raw size
-chunk-NJZERHX6.js    | dashboard-component         |  16.36 kB | 
-chunk-YLAVWOSK.js    | journal-component           |  13.15 kB | 
+chunk-B37Q2JIL.js    | journal-component           |  13.19 kB | 
 chunk-V3QQEWAF.js    | community-circles-component |   6.86 kB | 
 chunk-NS4MJOUD.js    | journey-map-component       |   6.83 kB | 
 chunk-PLZWYDAB.js    | buddy-streak-component      |   6.48 kB | 
@@ -202,14 +99,14 @@ chunk-XHU4XRU7.js    | offline-events-component    |   3.31 kB |
 Server bundles      
 Initial chunk files  | Names                       |  Raw size
 polyfills.server.mjs | polyfills.server            | 572.91 kB | 
-chunk-4T2UPMQQ.mjs   | -                           |  10.96 kB | 
+chunk-P7INOKPL.mjs   | -                           |  10.96 kB | 
 server.mjs           | server                      |   1.42 kB | 
 main.server.mjs      | main.server                 | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                           | 788 bytes | 
 
 Lazy chunk files     | Names                       |  Raw size
 chunk-DM757WQK.mjs   | dashboard-component         |  16.39 kB | 
-chunk-IMTGRYA3.mjs   | journal-component           |  13.19 kB | 
+chunk-VE4FOGSR.mjs   | journal-component           |  13.23 kB | 
 chunk-M57XVEQ2.mjs   | community-circles-component |   6.90 kB | 
 chunk-TN6AWMWD.mjs   | journey-map-component       |   6.86 kB | 
 chunk-ET33FAYM.mjs   | buddy-streak-component      |   6.51 kB | 
@@ -225,98 +122,5 @@ chunk-YJUQEQGS.mjs   | mini-games-component        |   3.53 kB |
 chunk-DRLPNSXJ.mjs   | offline-events-component    |   3.35 kB | 
 ...and 2 more lazy chunks files. Use "--verbose" to show all the files.
 
-Application bundle generation complete. [0.152 seconds]
+Application bundle generation complete. [1.356 seconds]
 
-Page reload sent to client(s).
-1:55:58 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
-      at /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  10.52 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-OSVBS5HD.js   | journal-component |  13.15 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-MQN73B7A.mjs  | -                 |  10.96 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-TLCLTG4X.mjs  | journal-component |  13.19 kB | 
-
-Application bundle generation complete. [0.389 seconds]
-
-Page reload sent to client(s).
-1:56:27 PM [vite] (ssr) ✨ new dependencies optimized: rxjs, rxjs/operators
-1:56:27 PM [vite] (ssr) ✨ optimized dependencies changed. reloading
-ERROR RuntimeError: NG0203: inject() must be called from an injection context such as a constructor, a factory function, a field initializer, or a function used with `runInInjectionContext`. Find more at https://angular.dev/errors/NG0203
-    at injectInjectorOnly (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-UJWP7ZUT.js:1480:11)
-    at ɵɵinject (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-UJWP7ZUT.js:1490:59)
-    at ɵɵdirectiveInject (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-UJWP7ZUT.js:11286:12)
-    at NodeInjectorFactory.NgForOf_Factory (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-AUKUZSS5.js:2448:65)
-    at getNodeInjectable (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:15403:38)
-    at instantiateAllDirectives (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19614:23)
-    at createDirectivesInstances (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:19477:3)
-    at declareTemplate (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:24874:5)
-    at Module.ɵɵtemplate (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/.angular/cache/19.2.1/angular/vite/deps_ssr/chunk-62672OIL.js:24885:3)
-    at JournalComponent_Template (/home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/src/app/journal/journal.component.html:12:9) {
-  code: -203
-}
-1:56:31 PM [vite] (client) ✨ new dependencies optimized: rxjs, rxjs/operators
-1:56:31 PM [vite] (client) ✨ optimized dependencies changed. reloading
-1:56:32 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
-      at /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
-      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-1:56:32 PM [vite] Internal server error: ɵgetOrCreateAngularServerApp is not a function
-      at /home/kavia/workspace/code-generation/digital-detox-companion-37378-370a775e/digital_detox_companion/node_modules/@angular/build/src/tools/vite/middlewares/ssr-middleware.js:30:38
-      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  10.52 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-QAMFD776.js   | journal-component |  13.21 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-OXHQGJIU.mjs  | -                 |  10.96 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-QBZJ7C4P.mjs  | journal-component |  13.24 kB | 
-
-Application bundle generation complete. [0.324 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names             |  Raw size
-main.js             | main              |  10.52 kB | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-OZQ3PHAZ.js   | journal-component |  13.17 kB | 
-
-
-Server bundles     
-Initial chunk files | Names             |  Raw size
-chunk-SMCDRGZ2.mjs  | -                 |  10.96 kB | 
-server.mjs          | server            |   1.42 kB | 
-main.server.mjs     | main.server       | 831 bytes | 
-
-Lazy chunk files    | Names             |  Raw size
-chunk-DFJ2RHXQ.mjs  | journal-component |  13.21 kB | 
-
-Application bundle generation complete. [0.246 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
