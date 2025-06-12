@@ -107,6 +107,63 @@ export class DetoxStateService {
   // Plans
   // PUBLIC_INTERFACE
   getPlans() { return this.state.plans.map(x => ({ ...x })); }
+
+  // --- JOURNEY MAP Additions ---
+  // PUBLIC_INTERFACE
+  getJourneyMilestones() {
+    // Allow dynamic in-state milestones if previously set, else default
+    if ('journey' in this.state && Array.isArray((this.state as any).journey?.milestones)) {
+      return (this.state as any).journey.milestones.map((x: any) => ({ ...x }));
+    }
+    // Default sample
+    return [
+      { label: "Start", achieved: true, date: Date.now() - 86400 * 1000 * 13, notes: "Decided to start!" },
+      { label: "Week 1", achieved: true, date: Date.now() - 86400 * 1000 * 6, notes: "First week strong" },
+      { label: "Mid-point", achieved: false, date: null, notes: "" },
+      { label: "Current", achieved: false, date: null, notes: "" },
+      { label: "Goal", achieved: false, date: null, notes: "1 month detox!" }
+    ];
+  }
+
+  // PUBLIC_INTERFACE
+  setJourneyMilestones(milestones: any[]) {
+    if (!('journey' in this.state)) (this.state as any).journey = {};
+    (this.state as any).journey.milestones = milestones.map(x => ({ ...x }));
+    this.save();
+  }
+
+  // PUBLIC_INTERFACE
+  getMoodHistory() {
+    if ('journey' in this.state && Array.isArray((this.state as any).journey?.moods)) {
+      return ((this.state as any).journey.moods).map((x: any) => ({ ...x }));
+    }
+    return [];
+  }
+
+  // PUBLIC_INTERFACE
+  addMoodEntry(mood: string) {
+    if (!('journey' in this.state)) (this.state as any).journey = {};
+    if (!Array.isArray((this.state as any).journey.moods))
+      (this.state as any).journey.moods = [];
+    (this.state as any).journey.moods.push({
+      mood,
+      when: Date.now()
+    });
+    this.save();
+  }
+
+  // PUBLIC_INTERFACE
+  addMilestoneReflection(idx: number, entry: { text: string, mood: string }) {
+    if (!('journey' in this.state)) (this.state as any).journey = {};
+    if (!Array.isArray((this.state as any).journey.milestones))
+      (this.state as any).journey.milestones = this.getJourneyMilestones();
+    const milestones = (this.state as any).journey.milestones;
+    if (milestones[idx]) {
+      if (!Array.isArray(milestones[idx].reflections)) milestones[idx].reflections = [];
+      milestones[idx].reflections.push({ ...entry, at: Date.now() });
+      this.save();
+    }
+  }
   // PUBLIC_INTERFACE
   updatePlans(plans: DetoxPlan[]) {
     this.state.plans = plans.map(x => ({ ...x }));
