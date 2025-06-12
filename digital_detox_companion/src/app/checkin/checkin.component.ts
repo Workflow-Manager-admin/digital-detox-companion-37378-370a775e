@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
-import { ResultService } from '../result.service';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -14,21 +12,14 @@ import { ResultService } from '../result.service';
 export class CheckinComponent {
   delivered = false;
 
-  constructor(private router: Router, private resultService: ResultService) {}
+  constructor() {}
 
   // PUBLIC_INTERFACE
   sendCheckin() {
     this.delivered = true;
-    globalThis.setTimeout(() => {
+    setTimeout(() => {
       this.delivered = false;
-      this.resultService.setResult({
-        result: 'Check-in Sent!',
-        detail: {
-          time: new Date().toLocaleTimeString(),
-          action: 'Off-grid check-in sent to your buddy.'
-        }
-      });
-      this.router.navigate(['/result']);
+      // business logic/service call goes here
     }, 1000);
   }
 }

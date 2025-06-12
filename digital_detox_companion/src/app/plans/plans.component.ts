@@ -18,17 +18,10 @@ export class PlansComponent {
     { label: 'No use after 9pm', desc: 'Screen-free evenings', checked: true }
   ];
 
-  constructor(private router: Router, private resultService: ResultService) {}
+  constructor() {}
 
   // PUBLIC_INTERFACE
   editPlans() {
-    this.resultService.setResult({
-      result: 'Plans Updated',
-      detail: {
-        updatedGoals: this.goals.filter(g => g.checked).map(g => g.label),
-        message: 'Detox plan preferences saved. Adjust as needed.'
-      }
-    });
-    this.router.navigate(['/result']);
+    // Save plan edits here (to service)
   }
 }
